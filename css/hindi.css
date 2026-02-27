@@ -1,0 +1,137 @@
+/* ============================================
+   HINDI — Font & Layout Overrides
+   Applied only on pages with lang="hi"
+   ============================================ */
+
+[lang="hi"] body {
+  font-family: var(--font-hindi-body);
+  line-height: 1.85;
+}
+
+[lang="hi"] h1,
+[lang="hi"] h2,
+[lang="hi"] h3 {
+  font-family: var(--font-hindi-heading);
+  letter-spacing: 0.02em;
+  line-height: var(--leading-snug);
+}
+
+[lang="hi"] h4,
+[lang="hi"] h5,
+[lang="hi"] h6 {
+  font-family: var(--font-hindi-heading);
+  letter-spacing: 0.01em;
+}
+
+[lang="hi"] .nav-link,
+[lang="hi"] .mobile-nav-link {
+  font-family: var(--font-hindi-body);
+  font-size: var(--text-sm);
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+[lang="hi"] .nav-dropdown-menu a {
+  font-family: var(--font-hindi-body);
+  letter-spacing: 0;
+}
+
+[lang="hi"] .mobile-nav-category {
+  font-family: var(--font-hindi-body);
+  text-transform: none;
+  letter-spacing: 0.05em;
+}
+
+[lang="hi"] .hero__label {
+  font-family: var(--font-hindi-body);
+  text-transform: none;
+  letter-spacing: 0.08em;
+}
+
+[lang="hi"] .hero__title {
+  font-family: var(--font-hindi-heading);
+  letter-spacing: 0.02em;
+}
+
+[lang="hi"] .hero__subtitle {
+  font-family: var(--font-hindi-body);
+}
+
+[lang="hi"] .btn {
+  font-family: var(--font-hindi-body);
+  text-transform: none;
+  letter-spacing: 0.05em;
+}
+
+[lang="hi"] .section-header__label {
+  font-family: var(--font-hindi-body);
+  text-transform: none;
+  letter-spacing: 0.05em;
+}
+
+[lang="hi"] .stat-label {
+  font-family: var(--font-hindi-body);
+  text-transform: none;
+  letter-spacing: 0.03em;
+}
+
+[lang="hi"] .footer-column h4 {
+  font-family: var(--font-hindi-body);
+  text-transform: none;
+  letter-spacing: 0.05em;
+}
+
+[lang="hi"] .footer-column a,
+[lang="hi"] .footer-bottom p {
+  font-family: var(--font-hindi-body);
+}
+
+[lang="hi"] p {
+  font-family: var(--font-hindi-body);
+  line-height: 1.9;
+}
+
+[lang="hi"] blockquote p {
+  font-family: var(--font-hindi-body);
+}
+
+[lang="hi"] .chapter-card__title {
+  font-family: var(--font-hindi-heading);
+}
+
+[lang="hi"] .chapter-card__excerpt,
+[lang="hi"] .chapter-card__arrow {
+  font-family: var(--font-hindi-body);
+  text-transform: none;
+}
+
+[lang="hi"] .tag {
+  font-family: var(--font-hindi-body);
+  text-transform: none;
+}
+
+[lang="hi"] .page-nav__direction {
+  font-family: var(--font-hindi-body);
+  text-transform: none;
+}
+
+[lang="hi"] .comparison-table thead th {
+  font-family: var(--font-hindi-body);
+  text-transform: none;
+}
+
+[lang="hi"] .callout__title {
+  font-family: var(--font-hindi-body);
+  text-transform: none;
+}
+
+/* Logo stays in English Cinzel on Hindi pages */
+[lang="hi"] .site-logo .logo-full,
+[lang="hi"] .site-logo .logo-compact {
+  font-family: var(--font-heading);
+}
+
+/* Ensure Hindi numeral rendering */
+[lang="hi"] .stat-number {
+  font-family: var(--font-heading);
+}

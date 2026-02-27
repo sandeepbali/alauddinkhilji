@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:digantsharma.com)",
+      "WebFetch(domain:bharatfiles.com)",
+      "WebFetch(domain:creaadesigns.com)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where:*)",
+      "Bash(winget install:*)",
+      "Bash(export PATH=\"/c/Program Files/nodejs:$PATH\")",
+      "Bash(npx --version:*)",
+      "mcp__Desktop_Commander__list_directory"
+    ]
+  }
+}

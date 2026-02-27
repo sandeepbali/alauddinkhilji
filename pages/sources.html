@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sources &amp; References | Alauddin Khilji</title>
+  <meta name="description" content="Complete bibliography of primary historical texts, peer-reviewed scholarship, and archaeological evidence backing every claim in the Alauddin Khilji archive. Verify everything.">
+  <link rel="canonical" href="https://alauddinkhilji.com/pages/sources.html">
+  <link rel="alternate" hreflang="hi" href="https://alauddinkhilji.com/hi/pages/sources.html">
+  <link rel="alternate" hreflang="en" href="https://alauddinkhilji.com/pages/sources.html">
+  <meta property="og:title" content="Sources &amp; References | Alauddin Khilji">
+  <meta property="og:description" content="Complete bibliography of primary historical texts, peer-reviewed scholarship, and archaeological evidence backing every claim in the Alauddin Khilji archive.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://alauddinkhilji.com/pages/sources.html">
+  <meta property="og:site_name" content="Alauddin Khilji - Bharat Files Initiative">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/hero.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/utilities.css">
+
+  <style>
+    /* Sources page-specific styles */
+    .source-entry {
+      position: relative;
+      padding: var(--space-xl) var(--space-2xl);
+      margin-bottom: var(--space-xl);
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border-subtle);
+      border-left: 3px solid var(--color-gold);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      transition: all var(--transition-base);
+    }
+
+    .source-entry:hover {
+      border-left-color: var(--color-gold-bright);
+      background: var(--color-bg-card-hover);
+      box-shadow: var(--shadow-gold);
+    }
+
+    .source-entry:target {
+      border-left-color: var(--color-gold-bright);
+      background: rgba(201, 168, 76, 0.06);
+      box-shadow: 0 0 0 1px var(--color-gold-dim), var(--shadow-gold);
+      animation: highlightPulse 2s ease-out;
+    }
+
+    @keyframes highlightPulse {
+      0% { box-shadow: 0 0 0 4px rgba(201, 168, 76, 0.3), var(--shadow-gold); }
+      100% { box-shadow: 0 0 0 1px var(--color-gold-dim), var(--shadow-gold); }
+    }
+
+    .source-entry__title {
+      font-family: var(--font-subheading);
+      font-size: var(--text-xl);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-xs);
+      letter-spacing: var(--tracking-wide);
+    }
+
+    .source-entry__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      margin-bottom: var(--space-md);
+    }
+
+    .source-entry__meta-item {
+      font-family: var(--font-ui);
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-wide);
+      text-transform: uppercase;
+    }
+
+    .source-entry__meta-label {
+      color: var(--color-gold-dim);
+      margin-right: var(--space-2xs);
+    }
+
+    .source-entry__meta-value {
+      color: var(--color-text-secondary);
+    }
+
+    .source-entry__description {
+      font-size: var(--text-base);
+      color: var(--color-text-secondary);
+      line-height: var(--leading-relaxed);
+      margin-bottom: var(--space-md);
+    }
+
+    .source-entry__significance {
+      font-family: var(--font-ui);
+      font-size: var(--text-sm);
+      color: var(--color-gold);
+      padding: var(--space-sm) var(--space-md);
+      background: var(--color-gold-glow);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--color-gold-muted);
+      display: inline-block;
+    }
+
+    .source-entry__significance strong {
+      font-weight: var(--weight-semibold);
+      color: var(--color-gold-bright);
+    }
+
+    .source-entry__id-anchor {
+      position: absolute;
+      top: var(--space-sm);
+      right: var(--space-md);
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-text-muted);
+      opacity: 0;
+      transition: opacity var(--transition-fast);
+    }
+
+    .source-entry:hover .source-entry__id-anchor {
+      opacity: 0.6;
+    }
+
+    .section-anchor-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-2xl);
+    }
+
+    .section-anchor-nav a {
+      font-family: var(--font-ui);
+      font-size: var(--text-xs);
+      font-weight: var(--weight-medium);
+      letter-spacing: var(--tracking-wider);
+      text-transform: uppercase;
+      color: var(--color-gold-dim);
+      padding: var(--space-xs) var(--space-md);
+      border: 1px solid var(--color-border-subtle);
+      border-radius: var(--radius-full);
+      text-decoration: none;
+      transition: all var(--transition-fast);
+    }
+
+    .section-anchor-nav a:hover {
+      color: var(--color-gold);
+      border-color: var(--color-gold-dim);
+      background: var(--color-gold-glow);
+    }
+
+    .archive-link-card {
+      display: block;
+      padding: var(--space-lg) var(--space-xl);
+      margin-bottom: var(--space-md);
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border-subtle);
+      border-left: 3px solid var(--color-gold);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      text-decoration: none;
+      transition: all var(--transition-fast);
+    }
+
+    .archive-link-card:hover {
+      border-left-color: var(--color-gold-bright);
+      background: var(--color-bg-card-hover);
+    }
+
+    .archive-link-card__name {
+      font-family: var(--font-ui);
+      font-size: var(--text-sm);
+      font-weight: var(--weight-semibold);
+      color: var(--color-gold);
+      margin-bottom: var(--space-2xs);
+    }
+
+    .archive-link-card__desc {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: var(--leading-relaxed);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Shared Header -->
+  <div id="site-header"></div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero hero--page">
+      <div class="hero-ornament hero-ornament--tl"></div>
+      <div class="hero-ornament hero-ornament--tr"></div>
+      <div class="hero-ornament hero-ornament--bl"></div>
+      <div class="hero-ornament hero-ornament--br"></div>
+
+      <div class="hero-content">
+        <span class="hero__label" data-aos="fade-in-slow">Reference Library</span>
+        <h1 class="hero__title" data-aos="fade-up" data-aos-delay="200">
+          Sources &amp;<br><span class="text-gold">References</span>
+        </h1>
+        <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="400">
+          Every claim on this website is backed by primary historical texts, peer-reviewed scholarship, and archaeological evidence. Verify everything.
+        </p>
+      </div>
+
+      <div class="hero-deco-line"></div>
+    </section>
+
+    <!-- ===== QUICK NAVIGATION ===== -->
+    <section class="section">
+      <div class="container container--narrow" data-aos="fade-up">
+        <div class="content-body">
+          <p class="lead">
+            This page serves as the master bibliography for the entire Alauddin Khilji archive. Every footnote, citation, and claim across all chapters resolves to an entry on this page. Use the section links below to navigate, or click any citation number throughout the site to jump directly to the relevant source.
+          </p>
+          <div class="section-anchor-nav" data-aos="fade-up" data-aos-delay="100">
+            <a href="#primary-sources">Primary Sources</a>
+            <a href="#modern-scholarship">Modern Scholarship</a>
+            <a href="#archaeological-evidence">Archaeological Evidence</a>
+            <a href="#digital-archives">Digital Archives</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 1: PRIMARY HISTORICAL SOURCES ===== -->
+    <section class="section section--dark" id="primary-sources">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">Category 01</span>
+          <h2 class="section-header__title">Primary <span class="text-gold">Historical Sources</span></h2>
+          <p class="section-header__subtitle">
+            Contemporary and near-contemporary texts written by court historians, poets, and chroniclers who lived during or shortly after the Delhi Sultanate period. These are the foundational documents upon which all subsequent scholarship rests.
+          </p>
+        </div>
+
+        <div class="callout callout--info" data-aos="fade-up">
+          <div class="callout__title">About Primary Sources</div>
+          <p class="callout__text">
+            Primary sources are texts produced during or shortly after the period they describe. For Alauddin Khilji's reign (1296&ndash;1316 CE), the most important primary sources were written by Muslim court historians and poets who served the Delhi Sultanate. Their accounts are particularly valuable because they describe events from a perspective sympathetic to the rulers &mdash; meaning any atrocities they document were recorded as achievements, not accusations. This makes their testimony especially reliable as evidence.
+          </p>
+        </div>
+
+        <!-- Source: Barani - Tarikh-i-Firoz Shahi -->
+        <div class="source-entry" id="barani-tarikh" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#barani-tarikh</span>
+          <h3 class="source-entry__title">Tarikh-i-Firoz Shahi</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Author:</span>
+              <span class="source-entry__meta-value">Ziauddin Barani</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Date:</span>
+              <span class="source-entry__meta-value">c. 1357 CE</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Language:</span>
+              <span class="source-entry__meta-value">Persian</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">Court Chronicle</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            Ziauddin Barani was a court historian who lived during Alauddin Khilji's era and later served in the court of Muhammad bin Tughlaq. His chronicle covers the history of the Delhi Sultanate from the reign of Ghiyasuddin Balban to Firoz Shah Tughlaq. The sections on Alauddin Khilji are among the most detailed historical accounts of any medieval Indian ruler, providing extensive documentation of his administrative policies, market control system, military campaigns, tax regime, and treatment of the Hindu population. Barani records Khilji's own words regarding his policies toward the Hindu population, making this text an irreplaceable primary source.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> Most detailed account of Khilji's administration, policies, and campaigns. Contains direct quotes attributed to Khilji himself. Primary source for economic oppression and anti-Hindu policies.
+          </span>
+        </div>
+
+        <!-- Source: Khusrau - Khazain-ul-Futuh -->
+        <div class="source-entry" id="khusrau-khazain" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#khusrau-khazain</span>
+          <h3 class="source-entry__title">Khazain-ul-Futuh (Treasures of Victory)</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Author:</span>
+              <span class="source-entry__meta-value">Amir Khusrau</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Date:</span>
+              <span class="source-entry__meta-value">c. 1311 CE</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Language:</span>
+              <span class="source-entry__meta-value">Persian</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">Court Poetry / Chronicle</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            Amir Khusrau was the official court poet of Alauddin Khilji and a direct eyewitness to many of the events he describes. <em>Khazain-ul-Futuh</em> is a prose work that provides first-hand accounts of Khilji's military campaigns, including the sieges of Chittor, Gujarat, and the Deccan campaigns. As a poet and propagandist writing in service of Khilji, Khusrau describes destructions and massacres in celebratory language, making his accounts uniquely valuable as evidence &mdash; the violence he records was presented as achievement, not criticism.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> First-hand eyewitness accounts of military campaigns including Chittor, Gujarat, and the Deccan. Written during Khilji's lifetime by his own court poet. Describes temple destructions and massacres as celebrations.
+          </span>
+        </div>
+
+        <!-- Source: Khusrau - Tarikh-i-Alai -->
+        <div class="source-entry" id="khusrau-alai" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#khusrau-alai</span>
+          <h3 class="source-entry__title">Tarikh-i-Alai</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Author:</span>
+              <span class="source-entry__meta-value">Amir Khusrau</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Date:</span>
+              <span class="source-entry__meta-value">c. 1311 CE</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Language:</span>
+              <span class="source-entry__meta-value">Persian</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">Historical Masnavi (Verse Chronicle)</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            Also known as <em>Ashiqa</em>, the <em>Tarikh-i-Alai</em> is a masnavi (verse narrative) by Amir Khusrau that specifically covers Alauddin Khilji's military campaigns. Written in poetic form, it provides detailed accounts of the conquest of Chittor and other military expeditions. The work was composed as a tribute to Khilji's military achievements and provides valuable supplementary detail to the prose accounts in <em>Khazain-ul-Futuh</em>.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> Specifically covers Khilji's campaigns in poetic form. Supplements the prose accounts in Khazain-ul-Futuh with additional narrative detail about the conquests.
+          </span>
+        </div>
+
+        <!-- Source: Isami - Futuh-us-Salatin -->
+        <div class="source-entry" id="isami-futuh" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#isami-futuh</span>
+          <h3 class="source-entry__title">Futuh-us-Salatin</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Author:</span>
+              <span class="source-entry__meta-value">Isami</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Date:</span>
+              <span class="source-entry__meta-value">c. 1350 CE</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Language:</span>
+              <span class="source-entry__meta-value">Persian</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">Independent Chronicle</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            Isami's <em>Futuh-us-Salatin</em> is an independent poetic chronicle of the Delhi Sultanate, written in the Deccan under the patronage of the Bahmani Sultan. Unlike Barani and Khusrau, Isami wrote from outside the Delhi court, providing a perspective from the territories that directly experienced the devastation of Malik Kafur's southern campaigns under Khilji's orders. The work covers the Muslim conquest of India from the Ghaznavids through the Tughlaqs and is particularly valuable for its accounts of the Deccan campaigns.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> Independent chronicle written outside the Delhi court. Provides perspective from the Deccan, which bore the brunt of Malik Kafur's campaigns. Corroborates and supplements Delhi-based accounts.
+          </span>
+        </div>
+
+        <!-- Source: Jayasi - Padmavat -->
+        <div class="source-entry" id="jayasi-padmavat" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#jayasi-padmavat</span>
+          <h3 class="source-entry__title">Padmavat</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Author:</span>
+              <span class="source-entry__meta-value">Malik Muhammad Jayasi</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Date:</span>
+              <span class="source-entry__meta-value">1540 CE</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Language:</span>
+              <span class="source-entry__meta-value">Awadhi</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">Sufi Allegorical Poem</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            Malik Muhammad Jayasi's <em>Padmavat</em> is a Sufi allegorical poem written approximately 230 years after Alauddin Khilji's siege of Chittor. It is the origin of the Padmavati legend &mdash; the story of a beautiful Rajput queen whose beauty drove Khilji to lay siege to Chittor Fort. The poem is a work of mystical fiction, not a historical account, using the siege of Chittor as an allegorical framework for Sufi spiritual concepts. Despite its fictional nature, it became the basis for the popular narrative of Khilji in modern culture, including the 2018 Bollywood film <em>Padmaavat</em>.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> Origin of the Padmavati legend. NOT a historical source &mdash; it is a Sufi allegorical poem written 230 years after the events. Important for understanding how fiction replaced historical fact in the popular narrative.
+          </span>
+        </div>
+
+        <!-- Source: Siraj - Tabaqat-i-Nasiri -->
+        <div class="source-entry" id="siraj-tabaqat" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#siraj-tabaqat</span>
+          <h3 class="source-entry__title">Tabaqat-i-Nasiri</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Author:</span>
+              <span class="source-entry__meta-value">Minhaj-i-Siraj</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Date:</span>
+              <span class="source-entry__meta-value">c. 1260 CE</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Language:</span>
+              <span class="source-entry__meta-value">Persian</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">General History / Chronicle</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            Minhaj-i-Siraj's <em>Tabaqat-i-Nasiri</em> is one of the earliest comprehensive histories of the Muslim world, written in the court of the Delhi Sultanate under Sultan Nasir-ud-din Mahmud. While it predates Alauddin Khilji's reign by several decades, it provides essential context for understanding the political, military, and administrative structures of the early Delhi Sultanate that Khilji inherited and expanded. The chronicle covers the establishment of Muslim rule in India, the destruction of the university at Nalanda, and the patterns of conquest and temple destruction that preceded Khilji's era.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> Provides critical context for the early Delhi Sultanate period. Establishes the patterns of conquest, temple destruction, and religious persecution that Khilji inherited and intensified.
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 2: MODERN SCHOLARLY WORKS ===== -->
+    <section class="section" id="modern-scholarship">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">Category 02</span>
+          <h2 class="section-header__title">Modern <span class="text-gold">Scholarly Works</span></h2>
+          <p class="section-header__subtitle">
+            Peer-reviewed academic works by leading historians that analyze, contextualize, and interpret the primary sources. These works provide critical analysis and modern historical methodology.
+          </p>
+        </div>
+
+        <div class="callout callout--info" data-aos="fade-up">
+          <div class="callout__title">How to Verify Scholarly Claims</div>
+          <p class="callout__text">
+            Modern scholarly works cited here are available through university libraries, JSTOR, Google Scholar, and major booksellers. Many are available in Indian university libraries and through inter-library loan. We encourage readers to obtain these works independently and verify the citations and interpretations presented on this website.
+          </p>
+        </div>
+
+        <!-- Source: K.S. Lal -->
+        <div class="source-entry" id="lal-khaljis" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#lal-khaljis</span>
+          <h3 class="source-entry__title">History of the Khaljis (1290&ndash;1320)</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Author:</span>
+              <span class="source-entry__meta-value">K.S. Lal</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">First Published:</span>
+              <span class="source-entry__meta-value">1950 (revised 1980)</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">Academic Monograph</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            Professor K.S. Lal's definitive study of the Khalji dynasty remains the most comprehensive modern academic treatment of Alauddin Khilji's reign. Based on extensive analysis of Persian primary sources, Lal documents the political history, military campaigns, administrative reforms, and social impact of Khalji rule. The revised 1980 edition incorporates additional primary source analysis and responds to critiques of the original work.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> Definitive modern academic monograph on the Khalji dynasty. Most comprehensive modern analysis of primary Persian sources related to Khilji's reign.
+          </span>
+        </div>
+
+        <!-- Source: R.C. Majumdar -->
+        <div class="source-entry" id="majumdar-delhi" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#majumdar-delhi</span>
+          <h3 class="source-entry__title">History and Culture of the Indian People, Vol. VI: The Delhi Sultanate</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Editor:</span>
+              <span class="source-entry__meta-value">R.C. Majumdar</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Publisher:</span>
+              <span class="source-entry__meta-value">Bharatiya Vidya Bhavan</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">Multi-volume Edited Collection</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            Edited by the eminent historian R.C. Majumdar, this volume in the monumental <em>History and Culture of the Indian People</em> series provides a comprehensive treatment of the Delhi Sultanate period. Contributions from leading Indian historians cover the political, social, economic, and cultural dimensions of the Sultanate era. The work is notable for its willingness to engage directly with the religious dimensions of Sultanate-era violence, which many other survey histories have omitted or minimized.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> Authoritative multi-author academic volume. Provides comprehensive coverage of political, social, economic, and cultural dimensions of the Sultanate period with rigorous source analysis.
+          </span>
+        </div>
+
+        <!-- Source: Richard Eaton -->
+        <div class="source-entry" id="eaton-temples" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#eaton-temples</span>
+          <h3 class="source-entry__title">Temple Desecration and Indo-Muslim States</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Author:</span>
+              <span class="source-entry__meta-value">Richard M. Eaton</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Published:</span>
+              <span class="source-entry__meta-value">Journal of Islamic Studies, 2000</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">Peer-reviewed Academic Article</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            Richard Eaton's influential academic analysis examines the patterns and motivations behind temple destruction during the period of Indo-Muslim rule. Drawing on a systematic review of primary sources, Eaton categorizes and contextualizes instances of temple desecration across several centuries. His work provides an analytical framework for understanding the systematic nature of temple destructions during the Delhi Sultanate period, including those carried out under Alauddin Khilji's orders.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> Peer-reviewed academic analysis of temple destruction patterns. Provides systematic data and analytical framework for understanding the scale and nature of religious site destruction.
+          </span>
+        </div>
+
+        <!-- Source: Irfan Habib -->
+        <div class="source-entry" id="habib-economic" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#habib-economic</span>
+          <h3 class="source-entry__title">Economic History of Medieval India</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Author:</span>
+              <span class="source-entry__meta-value">Irfan Habib</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">Academic Economic History</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            Professor Irfan Habib's work on the economic history of medieval India provides essential context for understanding the economic structures of the Delhi Sultanate, including Alauddin Khilji's market control system and taxation policies. Habib's analysis of agrarian relations, revenue systems, and urban economics during the medieval period is foundational for understanding how Khilji's economic policies functioned as instruments of both statecraft and targeted oppression.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> Leading authority on medieval Indian economic history. Provides the economic context essential for understanding Khilji's market controls and taxation as instruments of systematic oppression.
+          </span>
+        </div>
+
+        <!-- Source: Abraham Eraly -->
+        <div class="source-entry" id="eraly-wrath" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#eraly-wrath</span>
+          <h3 class="source-entry__title">The Age of Wrath: A History of the Delhi Sultanate</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Author:</span>
+              <span class="source-entry__meta-value">Abraham Eraly</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Publisher:</span>
+              <span class="source-entry__meta-value">Penguin Books India</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">Narrative History</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            Abraham Eraly's narrative history of the Delhi Sultanate provides an accessible yet scholarly account of the period. Drawing on the same Persian primary sources used by academic historians, Eraly reconstructs the political, social, and cultural world of the Sultanate with vivid detail. His treatment of Alauddin Khilji's reign is notable for its unflinching engagement with the violence documented in primary sources while maintaining rigorous standards of historical evidence.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> Accessible narrative history based on rigorous primary source analysis. Excellent entry point for readers seeking detailed coverage without academic jargon.
+          </span>
+        </div>
+
+        <!-- Source: Satish Chandra -->
+        <div class="source-entry" id="chandra-medieval" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#chandra-medieval</span>
+          <h3 class="source-entry__title">History of Medieval India</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Author:</span>
+              <span class="source-entry__meta-value">Satish Chandra</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Publisher:</span>
+              <span class="source-entry__meta-value">Orient BlackSwan</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">Mainstream Academic Textbook</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            Satish Chandra's <em>History of Medieval India</em> represents the mainstream textbook perspective on the Delhi Sultanate period and is widely used in Indian universities. This source is included for reference as a representation of the standard academic narrative &mdash; its treatment of Alauddin Khilji emphasizes administrative achievements and market reforms while providing limited coverage of religious persecution and temple destruction. Comparing Chandra's treatment with the primary sources directly illustrates the gap between the mainstream narrative and the historical record.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> Represents the mainstream textbook perspective. Useful for comparison with primary sources to understand what the standard narrative includes and omits.
+          </span>
+        </div>
+
+        <!-- Source: Banarsi Prasad Saksena -->
+        <div class="source-entry" id="saksena-shah" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#saksena-shah</span>
+          <h3 class="source-entry__title">Historical Works on the Khalji and Tughlaq Periods</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Author:</span>
+              <span class="source-entry__meta-value">Banarsi Prasad Saksena</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">Academic Historical Studies</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            Banarsi Prasad Saksena's scholarly contributions to the study of the Khalji and Tughlaq periods provide important supplementary analysis and translation of Persian primary sources. His works include detailed studies of specific aspects of Sultanate administration, governance, and military campaigns that corroborate and expand upon the major historical accounts. His scholarship is particularly valued for careful textual analysis of the original Persian manuscripts.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> Detailed textual analysis of Persian manuscripts. Provides supplementary corroboration and expanded analysis of the major primary sources.
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 3: ARCHAEOLOGICAL EVIDENCE ===== -->
+    <section class="section section--dark" id="archaeological-evidence">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">Category 03</span>
+          <h2 class="section-header__title">Archaeological <span class="text-gold">Evidence</span></h2>
+          <p class="section-header__subtitle">
+            Physical evidence from archaeological surveys, conservation reports, and site documentation that corroborates the written historical record. Stone does not lie.
+          </p>
+        </div>
+
+        <div class="callout callout--info" data-aos="fade-up">
+          <div class="callout__title">Verifying Archaeological Claims</div>
+          <p class="callout__text">
+            Archaeological evidence provides physical corroboration of the events described in primary sources. The sites listed below have been surveyed and documented by the Archaeological Survey of India (ASI) and other professional archaeological bodies. ASI reports are public records available through government archives and the ASI's own publications. Visitors can also directly inspect many of these sites, where evidence of destruction, reconstruction, and repurposing remains visible to this day.
+          </p>
+        </div>
+
+        <!-- Source: ASI Reports -->
+        <div class="source-entry" id="asi-reports" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#asi-reports</span>
+          <h3 class="source-entry__title">Archaeological Survey of India (ASI) Reports</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Institution:</span>
+              <span class="source-entry__meta-value">Archaeological Survey of India</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">Official Government Archaeological Reports</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            The Archaeological Survey of India, established in 1861, has produced extensive documentation of historical sites across India, including many directly relevant to Alauddin Khilji's reign. ASI reports provide scientific archaeological analysis, conservation assessments, and historical documentation of monuments, temples, and fortifications affected during the Sultanate period. These are official government records and represent the highest standard of archaeological documentation in India.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> Official government archaeological documentation. Provides physical, scientific evidence corroborating the written historical record.
+          </span>
+        </div>
+
+        <!-- Chittor Fort -->
+        <div class="source-entry" id="asi-chittor" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#asi-chittor</span>
+          <h3 class="source-entry__title">Chittor Fort &mdash; Conservation &amp; Archaeological Records</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Site:</span>
+              <span class="source-entry__meta-value">Chittorgarh, Rajasthan</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">UNESCO Status:</span>
+              <span class="source-entry__meta-value">World Heritage Site (Hill Forts of Rajasthan)</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">Conservation &amp; Site Documentation</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            Chittor Fort is the site of Alauddin Khilji's most infamous siege (1303 CE), where historical sources record a massive civilian massacre. ASI conservation records document the physical evidence of destruction, damage patterns to temples and palaces within the fort complex, and subsequent reconstruction efforts. The fort's archaeological record provides tangible evidence of the scale of the assault described in primary texts.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> Physical evidence corroborating the 1303 CE siege. Damage patterns to temples and structures visible to this day. UNESCO World Heritage Site with extensive documentation.
+          </span>
+        </div>
+
+        <!-- Somnath Temple -->
+        <div class="source-entry" id="asi-somnath" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#asi-somnath</span>
+          <h3 class="source-entry__title">Somnath Temple &mdash; Excavation &amp; Reconstruction Documentation</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Site:</span>
+              <span class="source-entry__meta-value">Prabhas Patan (Somnath), Gujarat</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">Excavation Reports &amp; Reconstruction Records</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            The Somnath temple, one of the most sacred Hindu pilgrimage sites, was raided during Alauddin Khilji's Gujarat campaign of 1299 CE under the command of Ulugh Khan and Nusrat Khan. Archaeological excavations and reconstruction documentation trace the temple's history of destruction and rebuilding &mdash; it was destroyed and rebuilt multiple times across several centuries, with the Khilji-era destruction being one of the documented episodes. Modern excavation reports detail the physical evidence of destruction layers.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> Archaeological evidence of multiple destruction episodes including the 1299 CE Khilji-era raid. Excavation reports document physical destruction layers corresponding to historical accounts.
+          </span>
+        </div>
+
+        <!-- Alai Darwaza and Alai Minar -->
+        <div class="source-entry" id="asi-alai" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#asi-alai</span>
+          <h3 class="source-entry__title">Alai Darwaza &amp; Alai Minar &mdash; Architectural Documentation</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Site:</span>
+              <span class="source-entry__meta-value">Qutb Complex, Delhi</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">UNESCO Status:</span>
+              <span class="source-entry__meta-value">World Heritage Site (Qutb Minar and its Monuments)</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">Architectural Survey &amp; Conservation</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            The Alai Darwaza (completed 1311 CE) and the incomplete Alai Minar are the most prominent surviving architectural commissions of Alauddin Khilji. Both sit within the Qutb Complex, which was built on the site of 27 demolished Hindu and Jain temples. ASI documentation of the complex includes analysis of the repurposed Hindu temple materials visible in the construction &mdash; carved pillars, decorative elements, and structural components from the original temples that were incorporated into the Islamic structures. The Alai Minar, intended to be double the height of the Qutb Minar, was left incomplete at Khilji's death.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> Physical evidence of construction using materials from demolished Hindu and Jain temples. Repurposed temple pillars and carvings remain visible within the complex today. UNESCO World Heritage documentation.
+          </span>
+        </div>
+
+        <!-- Quwwat-ul-Islam -->
+        <div class="source-entry" id="asi-quwwat" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#asi-quwwat</span>
+          <h3 class="source-entry__title">Quwwat-ul-Islam Mosque &mdash; Archaeological Analysis</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Site:</span>
+              <span class="source-entry__meta-value">Qutb Complex, Delhi</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">Type:</span>
+              <span class="source-entry__meta-value">Archaeological &amp; Architectural Analysis</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            The Quwwat-ul-Islam (&ldquo;Might of Islam&rdquo;) mosque, originally constructed by Qutb-ud-din Aibak in 1192 CE and expanded by subsequent rulers including Alauddin Khilji, is built directly on the site of 27 Hindu and Jain temples. Archaeological analysis of the mosque reveals extensive use of demolished temple materials &mdash; intricately carved Hindu temple pillars support the structure, with Hindu deities and symbols still visible on many columns where they were not completely defaced. Khilji's expansion of the mosque complex continued the practice of incorporating temple ruins into new construction.
+          </p>
+          <span class="source-entry__significance">
+            <strong>Significance:</strong> Direct physical evidence of temple destruction. Hindu temple pillars and carvings are still visible within the mosque structure. Inscriptions at the site confirm construction from demolished temples.
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 4: DIGITAL ARCHIVES & VERIFICATION ===== -->
+    <section class="section" id="digital-archives">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">Category 04</span>
+          <h2 class="section-header__title">Digital Archives &amp; <span class="text-gold">Verification</span></h2>
+          <p class="section-header__subtitle">
+            Online resources where you can access digitized manuscripts, academic databases, and primary source translations. We encourage independent verification of every claim.
+          </p>
+        </div>
+
+        <div class="callout callout--info" data-aos="fade-up">
+          <div class="callout__title">Verify Everything Yourself</div>
+          <p class="callout__text">
+            We believe that historical truth can withstand scrutiny. The following digital archives provide access to many of the primary sources and scholarly works cited throughout this website. We encourage every reader to consult these resources independently, read the original texts (many are available in English translation), and draw their own conclusions. If you find any error or misrepresentation on this website, we want to know about it.
+          </p>
+        </div>
+
+        <!-- Digitized Manuscripts -->
+        <div class="content-body">
+          <h3 data-aos="fade-up">Digitized Manuscript Collections</h3>
+          <p data-aos="fade-up">
+            Many of the primary Persian manuscripts referenced throughout this archive have been digitized and are available for direct consultation online.
+          </p>
+
+          <a href="https://www.bl.uk/collection-guides/indian-manuscripts" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">British Library &mdash; Indian Manuscripts Collection</div>
+            <div class="archive-link-card__desc">One of the world's largest collections of South Asian manuscripts, including Persian chronicles of the Delhi Sultanate period. Many manuscripts have been digitized and are freely accessible online.</div>
+          </a>
+
+          <a href="https://www.nationalarchives.gov.in/" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">National Archives of India &mdash; Digital Repository</div>
+            <div class="archive-link-card__desc">India's central repository of government records and historical documents. Contains ASI reports, historical maps, administrative records, and digitized manuscripts relevant to the Sultanate period.</div>
+          </a>
+
+          <a href="https://www.persica.org/" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">Persica.org &mdash; Persian Text Translations</div>
+            <div class="archive-link-card__desc">Academic resource for Persian text translations and analysis. Provides access to English translations of key Persian historical texts including chronicles of the Delhi Sultanate.</div>
+          </a>
+
+          <h3 data-aos="fade-up">University Digital Libraries</h3>
+          <p data-aos="fade-up">
+            Major university digital libraries provide access to both primary source materials and modern scholarly analysis.
+          </p>
+
+          <a href="https://www.jstor.org/" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">JSTOR &mdash; Academic Journal Archive</div>
+            <div class="archive-link-card__desc">Digital archive of academic journals, books, and primary sources. Contains peer-reviewed articles on Delhi Sultanate history, including Eaton's temple desecration analysis and other key scholarly works cited on this website.</div>
+          </a>
+
+          <a href="https://scholar.google.com/" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">Google Scholar</div>
+            <div class="archive-link-card__desc">Free search engine for academic literature. Search for any author or title cited on this website to find the original publications, citation counts, and related scholarly works.</div>
+          </a>
+
+          <a href="https://archive.org/" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">Internet Archive &mdash; Open Library</div>
+            <div class="archive-link-card__desc">Many out-of-copyright historical texts and older editions of scholarly works are freely available through the Internet Archive's Open Library, including early English translations of Persian chronicles.</div>
+          </a>
+
+          <h3 data-aos="fade-up">Archaeological &amp; Heritage Databases</h3>
+          <p data-aos="fade-up">
+            Online databases for archaeological reports, heritage site documentation, and conservation records.
+          </p>
+
+          <a href="https://asi.nic.in/" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">Archaeological Survey of India &mdash; Official Website</div>
+            <div class="archive-link-card__desc">Official website of the ASI with information on protected monuments, archaeological reports, conservation activities, and heritage site documentation across India.</div>
+          </a>
+
+          <a href="https://whc.unesco.org/" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">UNESCO World Heritage Centre</div>
+            <div class="archive-link-card__desc">Documentation for World Heritage Sites including the Qutb Complex (Delhi) and Hill Forts of Rajasthan (including Chittor Fort), with detailed historical descriptions and conservation reports.</div>
+          </a>
+
+          <a href="https://indianculture.gov.in/" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">Indian Culture Portal &mdash; Ministry of Culture</div>
+            <div class="archive-link-card__desc">Government of India's digital repository of Indian cultural heritage, including digitized manuscripts, historical photographs, and heritage site documentation from institutions across India.</div>
+          </a>
+        </div>
+
+        <div class="callout callout--info" data-aos="fade-up" style="margin-top: var(--space-2xl);">
+          <div class="callout__title">Citation Convention Used on This Website</div>
+          <p class="callout__text">
+            Throughout this archive, superscript citation numbers (e.g., [1], [2], [3]) link directly to source entries on this page. Clicking any citation number in any chapter will bring you to the relevant source. The id attributes on each source entry (visible as # anchors) enable deep linking from any page. If you are reading this archive for research purposes, you can cite specific sources using URLs in the format: <code style="color: var(--color-gold); font-size: var(--text-sm);">alauddinkhilji.com/pages/sources.html#barani-tarikh</code>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared Footer -->
+  <div id="site-footer"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="../js/components-en.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/language-toggle.js"></script>
+  <script src="../js/scroll-animations.js"></script>
+</body>
+</html>

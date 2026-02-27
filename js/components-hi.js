@@ -1,0 +1,143 @@
+/* ============================================
+   SHARED COMPONENTS — Hindi
+   Header + Footer injected into all /hi/ pages
+   ============================================ */
+
+(function () {
+  'use strict';
+
+  var path = window.location.pathname.replace(/\\/g, '/');
+  var isSubpage = path.indexOf('/pages/') !== -1;
+  var base = isSubpage ? '../..' : '..';
+  // Compute target English URL at injection time (baked into onclick — no JS file dependency)
+  var enUrl = path.replace(/^\/hi/, '') || '/';
+
+  // ---- HEADER (Hindi) ----
+  var headerHTML = ''
+    + '<a href="#main-content" class="skip-to-content">मुख्य सामग्री पर जाएं</a>'
+    + '<header class="site-header">'
+    + '  <div class="header-inner">'
+    + '    <a href="' + base + '/hi/index.html" class="site-logo">'
+    + '      <span class="logo-full">Alauddin Khilji</span>'
+    + '      <span class="logo-compact">AK</span>'
+    + '    </a>'
+    + '    <nav class="main-nav" aria-label="मुख्य नेविगेशन">'
+    + '      <ul class="nav-list">'
+    + '        <li><a href="' + base + '/hi/index.html" class="nav-link">होम</a></li>'
+    + '        <li><a href="' + base + '/hi/pages/popular-narrative.html" class="nav-link">वर्णन</a></li>'
+    + '        <li class="nav-dropdown">'
+    + '          <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">'
+    + '            इतिहास <span class="nav-arrow">&#9662;</span>'
+    + '          </button>'
+    + '          <ul class="nav-dropdown-menu">'
+    + '            <li><a href="' + base + '/hi/pages/rise-to-power.html">सत्ता में उदय</a></li>'
+    + '            <li><a href="' + base + '/hi/pages/military-campaigns.html">सैन्य अभियान</a></li>'
+    + '          </ul>'
+    + '        </li>'
+    + '        <li class="nav-dropdown">'
+    + '          <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">'
+    + '            प्रभाव <span class="nav-arrow">&#9662;</span>'
+    + '          </button>'
+    + '          <ul class="nav-dropdown-menu">'
+    + '            <li><a href="' + base + '/hi/pages/temple-destruction.html">मंदिर विध्वंस</a></li>'
+    + '            <li><a href="' + base + '/hi/pages/economic-oppression.html">आर्थिक शोषण</a></li>'
+    + '            <li><a href="' + base + '/hi/pages/persecution.html">उत्पीड़न एवं समाज</a></li>'
+    + '            <li><a href="' + base + '/hi/pages/lasting-damage.html">स्थायी क्षति</a></li>'
+    + '          </ul>'
+    + '        </li>'
+    + '        <li><a href="' + base + '/hi/pages/relevance-today.html" class="nav-link">आज</a></li>'
+    + '        <li><a href="' + base + '/hi/pages/timeline.html" class="nav-link">समयरेखा</a></li>'
+    + '        <li><a href="' + base + '/hi/pages/sources.html" class="nav-link">स्रोत</a></li>'
+    + '      </ul>'
+    + '    </nav>'
+    + '    <div class="header-actions">'
+    + '      <a href="' + enUrl + '" class="lang-toggle" aria-label="Switch to English">'
+    + '        English'
+    + '      </a>'
+    + '      <button class="hamburger" id="hamburger" aria-label="मेनू खोलें" aria-expanded="false">'
+    + '        <span></span><span></span><span></span>'
+    + '      </button>'
+    + '    </div>'
+    + '  </div>'
+    + '</header>'
+    + '<div class="mobile-menu-backdrop" id="mobileBackdrop"></div>'
+    + '<nav class="mobile-menu" id="mobileMenu" aria-label="मोबाइल नेविगेशन">'
+    + '  <a href="' + base + '/hi/index.html" class="mobile-nav-link">होम</a>'
+    + '  <div class="mobile-nav-category">वर्णन</div>'
+    + '  <a href="' + base + '/hi/pages/popular-narrative.html" class="mobile-nav-link">प्रचलित कथा</a>'
+    + '  <div class="mobile-nav-category">इतिहास</div>'
+    + '  <a href="' + base + '/hi/pages/rise-to-power.html" class="mobile-nav-link">सत्ता में उदय</a>'
+    + '  <a href="' + base + '/hi/pages/military-campaigns.html" class="mobile-nav-link">सैन्य अभियान</a>'
+    + '  <div class="mobile-nav-category">प्रभाव</div>'
+    + '  <a href="' + base + '/hi/pages/temple-destruction.html" class="mobile-nav-link">मंदिर विध्वंस</a>'
+    + '  <a href="' + base + '/hi/pages/economic-oppression.html" class="mobile-nav-link">आर्थिक शोषण</a>'
+    + '  <a href="' + base + '/hi/pages/persecution.html" class="mobile-nav-link">उत्पीड़न एवं समाज</a>'
+    + '  <a href="' + base + '/hi/pages/lasting-damage.html" class="mobile-nav-link">स्थायी क्षति</a>'
+    + '  <div class="mobile-nav-category">आज एवं संसाधन</div>'
+    + '  <a href="' + base + '/hi/pages/relevance-today.html" class="mobile-nav-link">आज की प्रासंगिकता</a>'
+    + '  <a href="' + base + '/hi/pages/timeline.html" class="mobile-nav-link">इंटरैक्टिव समयरेखा</a>'
+    + '  <a href="' + base + '/hi/pages/sources.html" class="mobile-nav-link">स्रोत एवं संदर्भ</a>'
+    + '  <div class="mobile-nav-category">जानकारी</div>'
+    + '  <a href="' + base + '/hi/pages/about.html" class="mobile-nav-link">परियोजना के बारे में</a>'
+    + '  <a href="' + base + '/hi/pages/disclaimer.html" class="mobile-nav-link">अस्वीकरण</a>'
+    + '  <div class="mobile-lang-toggle">'
+    + '    <a href="' + enUrl + '" class="btn btn--outline" style="display:block;width:100%;text-align:center;text-decoration:none">'
+    + '      Read in English'
+    + '    </a>'
+    + '  </div>'
+    + '</nav>';
+
+  // ---- FOOTER (Hindi) ----
+  var footerHTML = ''
+    + '<footer class="site-footer">'
+    + '  <div class="footer-grid">'
+    + '    <div class="footer-brand">'
+    + '      <div class="footer-site-name">अलाउद्दीन खिलजी</div>'
+    + '      <p class="footer-initiative">'
+    + '        एक <a href="https://bharatfiles.com" target="_blank" rel="noopener">भारत फाइल्स</a> पहल'
+    + '      </p>'
+    + '      <p class="footer-tagline">वह इतिहास जो आपकी पाठ्यपुस्तकों ने कभी नहीं पढ़ाया।</p>'
+    + '    </div>'
+    + '    <div class="footer-column">'
+    + '      <h4>अन्वेषण करें</h4>'
+    + '      <ul>'
+    + '        <li><a href="' + base + '/hi/pages/popular-narrative.html">प्रचलित कथा</a></li>'
+    + '        <li><a href="' + base + '/hi/pages/military-campaigns.html">सैन्य अभियान</a></li>'
+    + '        <li><a href="' + base + '/hi/pages/temple-destruction.html">मंदिर विध्वंस</a></li>'
+    + '        <li><a href="' + base + '/hi/pages/timeline.html">इंटरैक्टिव समयरेखा</a></li>'
+    + '        <li><a href="' + base + '/hi/pages/sources.html">स्रोत एवं संदर्भ</a></li>'
+    + '      </ul>'
+    + '    </div>'
+    + '    <div class="footer-column">'
+    + '      <h4>संबंधित अभिलेखागार</h4>'
+    + '      <ul>'
+    + '        <li><a href="https://mahmudofghazni.com" target="_blank" rel="noopener">महमूद गजनवी</a></li>'
+    + '        <li><a href="https://muhammadmaghori.com" target="_blank" rel="noopener">मुहम्मद घोरी</a></li>'
+    + '        <li><a href="https://aurangezebalamgir.com" target="_blank" rel="noopener">औरंगजेब आलमगीर</a></li>'
+    + '        <li><a href="https://muhammadbintughlaq.com" target="_blank" rel="noopener">मुहम्मद बिन तुगलक</a></li>'
+    + '        <li><a href="https://firozshahtuqhlaq.com" target="_blank" rel="noopener">फिरोज शाह तुगलक</a></li>'
+    + '      </ul>'
+    + '    </div>'
+    + '    <div class="footer-column">'
+    + '      <h4>जानकारी</h4>'
+    + '      <ul>'
+    + '        <li><a href="' + base + '/hi/pages/about.html">इस परियोजना के बारे में</a></li>'
+    + '        <li><a href="' + base + '/hi/pages/disclaimer.html">अस्वीकरण</a></li>'
+    + '        <li><a href="https://bharatfiles.com" target="_blank" rel="noopener">भारत फाइल्स</a></li>'
+    + '        <li><a href="https://digantsharma.com" target="_blank" rel="noopener">दिगंत शर्मा</a></li>'
+    + '      </ul>'
+    + '    </div>'
+    + '  </div>'
+    + '  <div class="footer-bottom">'
+    + '    <p>&copy; 2026 <a href="https://bharatfiles.com" target="_blank" rel="noopener">द भारत फाइल्स</a>। सर्वाधिकार सुरक्षित।</p>'
+    + '    <p>विकसित एवं प्रबंधित: <a href="https://creaadesigns.com" target="_blank" rel="noopener">Creaa Designs</a></p>'
+    + '  </div>'
+    + '</footer>';
+
+  // ---- INJECT ----
+  var headerEl = document.getElementById('site-header');
+  var footerEl = document.getElementById('site-footer');
+
+  if (headerEl) headerEl.innerHTML = headerHTML;
+  if (footerEl) footerEl.innerHTML = footerHTML;
+})();

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About This Project | Alauddin Khilji</title>
+  <meta name="description" content="About the Alauddin Khilji historical archive &mdash; part of the Bharat Files Initiative. Our mission, methodology, and the team behind documenting India's unvarnished history.">
+  <link rel="canonical" href="https://alauddinkhilji.com/pages/about.html">
+  <link rel="alternate" hreflang="hi" href="https://alauddinkhilji.com/hi/pages/about.html">
+  <link rel="alternate" hreflang="en" href="https://alauddinkhilji.com/pages/about.html">
+  <meta property="og:title" content="About This Project | Alauddin Khilji">
+  <meta property="og:description" content="About the Alauddin Khilji historical archive &mdash; part of the Bharat Files Initiative. Our mission, methodology, and the team behind documenting India's unvarnished history.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://alauddinkhilji.com/pages/about.html">
+  <meta property="og:site_name" content="Alauddin Khilji - Bharat Files Initiative">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/hero.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/utilities.css">
+
+  <style>
+    /* About page-specific styles */
+    .mission-highlight {
+      padding: var(--space-2xl) var(--space-3xl);
+      background: linear-gradient(135deg, rgba(201, 168, 76, 0.06), rgba(139, 37, 0, 0.04));
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      margin: var(--space-2xl) 0;
+    }
+
+    .mission-highlight p {
+      font-size: var(--text-lg);
+      color: var(--color-text-primary);
+      line-height: var(--leading-relaxed);
+      text-align: center;
+    }
+
+    .methodology-step {
+      display: flex;
+      gap: var(--space-xl);
+      padding: var(--space-xl) 0;
+      border-bottom: 1px solid var(--color-border-subtle);
+    }
+
+    .methodology-step:last-child {
+      border-bottom: none;
+    }
+
+    .methodology-step__number {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-size: var(--text-xl);
+      color: var(--color-gold);
+      border: 1px solid var(--color-gold-dim);
+      border-radius: var(--radius-full);
+    }
+
+    .methodology-step__content h3 {
+      font-family: var(--font-subheading);
+      font-size: var(--text-lg);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-sm);
+      letter-spacing: var(--tracking-wide);
+    }
+
+    .methodology-step__content p {
+      font-size: var(--text-base);
+      color: var(--color-text-secondary);
+      line-height: var(--leading-relaxed);
+    }
+
+    .get-involved-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-xl);
+    }
+
+    @media (min-width: 768px) {
+      .get-involved-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .involve-card {
+      padding: var(--space-2xl);
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border-subtle);
+      border-radius: var(--radius-md);
+      text-align: center;
+      transition: all var(--transition-base);
+    }
+
+    .involve-card:hover {
+      border-color: var(--color-border);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-gold);
+    }
+
+    .involve-card__icon {
+      font-size: var(--text-3xl);
+      margin-bottom: var(--space-md);
+      line-height: 1;
+    }
+
+    .involve-card__title {
+      font-family: var(--font-subheading);
+      font-size: var(--text-lg);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-sm);
+      letter-spacing: var(--tracking-wide);
+    }
+
+    .involve-card__text {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: var(--leading-relaxed);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Shared Header -->
+  <div id="site-header"></div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero hero--page">
+      <div class="hero-ornament hero-ornament--tl"></div>
+      <div class="hero-ornament hero-ornament--tr"></div>
+      <div class="hero-ornament hero-ornament--bl"></div>
+      <div class="hero-ornament hero-ornament--br"></div>
+
+      <div class="hero-content">
+        <span class="hero__label" data-aos="fade-in-slow">About</span>
+        <h1 class="hero__title" data-aos="fade-up" data-aos-delay="200">
+          About This<br><span class="text-gold">Project</span>
+        </h1>
+        <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="400">
+          Understanding why this archive exists, who built it, and the mission behind documenting India's unvarnished history.
+        </p>
+      </div>
+
+      <div class="hero-deco-line"></div>
+    </section>
+
+    <!-- ===== SECTION 1: THE MISSION ===== -->
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">Our Purpose</span>
+          <h2 class="section-header__title">The <span class="text-gold">Mission</span></h2>
+        </div>
+
+        <div class="content-body">
+          <p class="lead" data-aos="fade-up">
+            This website is part of the <a href="https://bharatfiles.com" target="_blank" rel="noopener" style="color: var(--color-gold); font-weight: 600;">Bharat Files Initiative</a>, dedicated to uncovering and documenting the real, unvarnished history of India using primary historical sources. The initiative maintains 15+ dedicated archives covering key historical figures whose true impact on Indian civilization has been systematically obscured, sanitized, or omitted from mainstream education.
+          </p>
+          <p data-aos="fade-up">
+            The Alauddin Khilji archive is one of the most comprehensive in the network. It brings together primary Persian historical texts, modern academic scholarship, and archaeological evidence to construct a complete, verifiable account of Khilji's twenty-year reign and its devastating impact on Indian civilization. Every claim is footnoted. Every source is cited. Every reader is invited to verify independently.
+          </p>
+
+          <div class="mission-highlight" data-aos="fade-up">
+            <p>
+              <strong style="color: var(--color-gold);">Our commitment:</strong> We present what the historical record says, as recorded by the historians of the period themselves. We do not fabricate, exaggerate, or sensationalize. The primary sources speak for themselves &mdash; and they are devastating enough without embellishment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 2: WHY THIS MATTERS ===== -->
+    <section class="section section--dark">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">The Context</span>
+          <h2 class="section-header__title">Why This <span class="text-gold">Matters</span></h2>
+        </div>
+
+        <div class="content-body">
+          <p data-aos="fade-up">
+            Indian education has systematically sanitized accounts of medieval-era invasions and their impact on the subcontinent's people, culture, and civilization. For decades, textbooks presented the Delhi Sultanate primarily as a period of administrative innovation and cultural synthesis, while omitting or minimizing the documented temple destructions, mass killings, economic subjugation, and religious persecution that primary sources describe in extensive detail.
+          </p>
+          <p data-aos="fade-up">
+            This creates a dangerous disconnect between lived reality and official narrative. Millions of Indians live among the ruins of a civilization that was systematically dismantled &mdash; broken temple pillars repurposed into mosque columns, sacred sites converted or destroyed, cultural traditions disrupted &mdash; yet the education system that shaped their understanding of history offered no explanation for what they could see with their own eyes.
+          </p>
+          <p data-aos="fade-up">
+            This archive aims to bridge that gap with source-backed documentation. Not with rhetoric or emotion, but with the words of the court historians who served these rulers, the archaeological evidence preserved in the ground and in standing structures, and the analysis of leading modern scholars who have studied the primary sources.
+          </p>
+
+          <div class="callout callout--info" data-aos="fade-up">
+            <div class="callout__title">A Note on Our Approach</div>
+            <p class="callout__text">
+              This archive does not seek to inflame hatred or promote division. It seeks to present documented historical facts that have been suppressed or obscured. Understanding what happened &mdash; accurately and completely &mdash; is a prerequisite for genuine reconciliation, informed citizenship, and the protection of the cultural heritage that survived. Ignorance is not the foundation of harmony; truth is.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 3: OUR METHODOLOGY ===== -->
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">How We Work</span>
+          <h2 class="section-header__title">Our <span class="text-gold">Methodology</span></h2>
+          <p class="section-header__subtitle">
+            Every claim on this website follows a rigorous three-step verification process grounded in established historical methodology.
+          </p>
+        </div>
+
+        <div class="content-body">
+          <div class="methodology-step" data-aos="fade-up">
+            <div class="methodology-step__number">1</div>
+            <div class="methodology-step__content">
+              <h3>Primary Source Foundation</h3>
+              <p>
+                Every historical claim begins with primary sources &mdash; texts written during or shortly after the events they describe. For Alauddin Khilji's reign, these include <a href="sources.html#barani-tarikh" style="color: var(--color-gold);">Ziauddin Barani's <em>Tarikh-i-Firoz Shahi</em></a>, <a href="sources.html#khusrau-khazain" style="color: var(--color-gold);">Amir Khusrau's <em>Khazain-ul-Futuh</em></a>, and <a href="sources.html#isami-futuh" style="color: var(--color-gold);">Isami's <em>Futuh-us-Salatin</em></a>. These Persian chronicles were written by Muslim court historians sympathetic to the Sultanate, making their accounts of atrocities particularly reliable &mdash; the violence they record was presented as achievement, not accusation.
+              </p>
+            </div>
+          </div>
+
+          <div class="methodology-step" data-aos="fade-up">
+            <div class="methodology-step__number">2</div>
+            <div class="methodology-step__content">
+              <h3>Modern Scholarly Corroboration</h3>
+              <p>
+                Primary source claims are corroborated through modern academic scholarship. We draw on the work of leading historians including <a href="sources.html#lal-khaljis" style="color: var(--color-gold);">K.S. Lal</a>, <a href="sources.html#majumdar-delhi" style="color: var(--color-gold);">R.C. Majumdar</a>, <a href="sources.html#eaton-temples" style="color: var(--color-gold);">Richard Eaton</a>, <a href="sources.html#habib-economic" style="color: var(--color-gold);">Irfan Habib</a>, and others whose peer-reviewed work has analyzed, contextualized, and interpreted the primary sources through modern historical methodology.
+              </p>
+            </div>
+          </div>
+
+          <div class="methodology-step" data-aos="fade-up">
+            <div class="methodology-step__number">3</div>
+            <div class="methodology-step__content">
+              <h3>Archaeological &amp; Physical Evidence</h3>
+              <p>
+                Where possible, written accounts are supported by archaeological evidence from the <a href="sources.html#asi-reports" style="color: var(--color-gold);">Archaeological Survey of India (ASI)</a> and other professional archaeological bodies. Physical evidence at sites such as Chittor Fort, the Qutb Complex, and the Somnath temple corroborates the written record with tangible, inspectable proof.
+              </p>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: var(--space-2xl);" data-aos="fade-up">
+            <a href="sources.html" class="btn btn--primary btn--lg">
+              View Complete Sources <span class="btn-arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 4: PROJECT FOUNDER ===== -->
+    <section class="section section--dark">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">Leadership</span>
+          <h2 class="section-header__title">Project <span class="text-gold">Founder</span></h2>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="100">
+          <div class="founder-card">
+            <div class="founder-image">
+              <img src="../images/founder/digant-sharma.webp"
+                   alt="Portrait of Digant Sharma, founder of the Bharat Files Initiative"
+                   width="180" height="180" loading="lazy">
+            </div>
+            <div class="founder-info">
+              <h2 class="founder-name">Digant Sharma</h2>
+              <p class="founder-title">Founder, Bharat Files Initiative</p>
+              <p class="founder-bio">Visionary leader and entrepreneur. Chairman &amp; Managing Director of S Retailer Worldwide Pvt Ltd and Chairman of Torus Group/Torus Innotech Pvt. Ltd. Recipient of the Excellence in Agriculture Award from Maharashtra CM Eknath Shinde for transforming the lives of over 100,000 tribal farmers. His diverse business ecosystem spans agriculture, technology, infrastructure, CSR, legal empowerment, digital media, logistics, and global trade.</p>
+              <div class="founder-links">
+                <a href="https://digantsharma.com" target="_blank" rel="noopener">digantsharma.com</a>
+                <a href="mailto:im@diganthsharma.com">im@diganthsharma.com</a>
+                <a href="tel:+919920808363">+91-9920808363</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 5: THE BHARAT FILES NETWORK ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">The Network</span>
+          <h2 class="section-header__title">The Bharat Files <span class="text-gold">Network</span></h2>
+          <p class="section-header__subtitle">
+            The Alauddin Khilji archive is one of 15+ dedicated historical archives in the <a href="https://bharatfiles.com" target="_blank" rel="noopener" style="color: var(--color-gold);">Bharat Files Initiative</a>. Each archive documents a key historical figure using the same rigorous, source-backed methodology.
+          </p>
+        </div>
+
+        <div class="grid-3" data-aos="fade-up" data-aos-delay="100">
+          <a href="https://mahmudofghazni.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">Mahmud of Ghazni</div>
+              <div class="sister-site-card__period">971 &ndash; 1030 CE</div>
+            </div>
+          </a>
+          <a href="https://muhammadmaghori.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">Muhammad Ghori</div>
+              <div class="sister-site-card__period">1149 &ndash; 1206 CE</div>
+            </div>
+          </a>
+          <a href="https://qutbuddinaibak.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">Qutbuddin Aibak</div>
+              <div class="sister-site-card__period">1150 &ndash; 1210 CE</div>
+            </div>
+          </a>
+          <a href="https://muhammadbintughlaq.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">Muhammad bin Tughlaq</div>
+              <div class="sister-site-card__period">1290 &ndash; 1351 CE</div>
+            </div>
+          </a>
+          <a href="https://firozshahtuqhlaq.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">Firoz Shah Tughlaq</div>
+              <div class="sister-site-card__period">1309 &ndash; 1388 CE</div>
+            </div>
+          </a>
+          <a href="https://aurangezebalamgir.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">Aurangzeb Alamgir</div>
+              <div class="sister-site-card__period">1618 &ndash; 1707 CE</div>
+            </div>
+          </a>
+          <a href="https://muhammadbinqasim.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">Muhammad bin Qasim</div>
+              <div class="sister-site-card__period">695 &ndash; 715 CE</div>
+            </div>
+          </a>
+          <a href="https://bahadurshahzafar.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">Bahadur Shah Zafar</div>
+              <div class="sister-site-card__period">1775 &ndash; 1862 CE</div>
+            </div>
+          </a>
+          <a href="https://sikandarlodi.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">Sikandar Lodi</div>
+              <div class="sister-site-card__period">1458 &ndash; 1517 CE</div>
+            </div>
+          </a>
+          <a href="https://sabuktigin.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">Sabuktigin</div>
+              <div class="sister-site-card__period">942 &ndash; 997 CE</div>
+            </div>
+          </a>
+          <a href="https://bahlullodi.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">Bahlul Lodi</div>
+              <div class="sister-site-card__period">1401 &ndash; 1489 CE</div>
+            </div>
+          </a>
+          <a href="https://ibrahimlodi.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">Ibrahim Lodi</div>
+              <div class="sister-site-card__period">1480 &ndash; 1526 CE</div>
+            </div>
+          </a>
+          <a href="https://ghiyasuddintuqhlaq.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">Ghiyasuddin Tughlaq</div>
+              <div class="sister-site-card__period">1284 &ndash; 1325 CE</div>
+            </div>
+          </a>
+          <a href="https://khwajaahansayyid.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">Khwaja Ahan Sayyid</div>
+              <div class="sister-site-card__period">Sayyid Dynasty</div>
+            </div>
+          </a>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-2xl);" data-aos="fade-up">
+          <a href="https://bharatfiles.com" target="_blank" rel="noopener" class="btn btn--outline btn--lg">
+            Visit Bharat Files <span class="btn-arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 6: GET INVOLVED ===== -->
+    <section class="section section--dark">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">Join the Effort</span>
+          <h2 class="section-header__title">Get <span class="text-gold">Involved</span></h2>
+          <p class="section-header__subtitle">
+            Reclaiming India's historical record is a collective effort. Here is how you can contribute to the mission.
+          </p>
+        </div>
+
+        <div class="get-involved-grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="involve-card">
+            <div class="involve-card__icon" style="color: var(--color-gold);">&#9878;</div>
+            <h3 class="involve-card__title">Share This Archive</h3>
+            <p class="involve-card__text">
+              Share this website with students, educators, researchers, and anyone interested in Indian history. The more people who access these documented primary sources, the harder it becomes to maintain the sanitized narrative.
+            </p>
+          </div>
+
+          <div class="involve-card">
+            <div class="involve-card__icon" style="color: var(--color-gold);">&#9998;</div>
+            <h3 class="involve-card__title">Contribute Research</h3>
+            <p class="involve-card__text">
+              If you have access to primary sources, translations, or scholarly works not yet included in our bibliography, we welcome contributions. All submissions are verified against established standards before inclusion.
+            </p>
+          </div>
+
+          <div class="involve-card">
+            <div class="involve-card__icon" style="color: var(--color-gold);">&#9993;</div>
+            <h3 class="involve-card__title">Contact the Team</h3>
+            <p class="involve-card__text">
+              For corrections, research contributions, partnership inquiries, or media requests, reach out to our team. We respond to all serious inquiries. Email: <a href="mailto:im@diganthsharma.com" style="color: var(--color-gold);">im@diganthsharma.com</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="callout callout--info" data-aos="fade-up" style="margin-top: var(--space-2xl);">
+          <div class="callout__title">Corrections Policy</div>
+          <p class="callout__text">
+            We are committed to historical accuracy. If you find any factual error, misattributed source, or inaccurate citation on this website, please contact us with the specific claim, the page it appears on, and the evidence for correction. We will investigate promptly and issue corrections where warranted. Our credibility depends on our accuracy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared Footer -->
+  <div id="site-footer"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="../js/components-en.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/language-toggle.js"></script>
+  <script src="../js/scroll-animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>इस परियोजना के बारे में | अलाउद्दीन खिलजी</title>
+  <meta name="description" content="अलाउद्दीन खिलजी ऐतिहासिक अभिलेखागार के बारे में &mdash; भारत फाइल्स पहल का हिस्सा। हमारा मिशन, कार्यप्रणाली, और भारत के असली इतिहास को दर्ज करने वाली टीम।">
+  <link rel="canonical" href="https://alauddinkhilji.com/hi/pages/about.html">
+  <link rel="alternate" hreflang="en" href="https://alauddinkhilji.com/pages/about.html">
+  <link rel="alternate" hreflang="hi" href="https://alauddinkhilji.com/hi/pages/about.html">
+  <meta property="og:title" content="इस परियोजना के बारे में | अलाउद्दीन खिलजी">
+  <meta property="og:description" content="अलाउद्दीन खिलजी ऐतिहासिक अभिलेखागार के बारे में &mdash; भारत फाइल्स पहल का हिस्सा। हमारा मिशन, कार्यप्रणाली, और भारत के असली इतिहास को दर्ज करने वाली टीम।">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://alauddinkhilji.com/hi/pages/about.html">
+  <meta property="og:site_name" content="अलाउद्दीन खिलजी - भारत फाइल्स पहल">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/variables.css">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/header.css">
+  <link rel="stylesheet" href="../../css/footer.css">
+  <link rel="stylesheet" href="../../css/hero.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/animations.css">
+  <link rel="stylesheet" href="../../css/utilities.css">
+  <link rel="stylesheet" href="../../css/hindi.css">
+
+  <style>
+    /* About page-specific styles */
+    .mission-highlight {
+      padding: var(--space-2xl) var(--space-3xl);
+      background: linear-gradient(135deg, rgba(201, 168, 76, 0.06), rgba(139, 37, 0, 0.04));
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      margin: var(--space-2xl) 0;
+    }
+
+    .mission-highlight p {
+      font-size: var(--text-lg);
+      color: var(--color-text-primary);
+      line-height: var(--leading-relaxed);
+      text-align: center;
+    }
+
+    .methodology-step {
+      display: flex;
+      gap: var(--space-xl);
+      padding: var(--space-xl) 0;
+      border-bottom: 1px solid var(--color-border-subtle);
+    }
+
+    .methodology-step:last-child {
+      border-bottom: none;
+    }
+
+    .methodology-step__number {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-size: var(--text-xl);
+      color: var(--color-gold);
+      border: 1px solid var(--color-gold-dim);
+      border-radius: var(--radius-full);
+    }
+
+    .methodology-step__content h3 {
+      font-family: var(--font-subheading);
+      font-size: var(--text-lg);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-sm);
+      letter-spacing: var(--tracking-wide);
+    }
+
+    .methodology-step__content p {
+      font-size: var(--text-base);
+      color: var(--color-text-secondary);
+      line-height: var(--leading-relaxed);
+    }
+
+    .get-involved-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-xl);
+    }
+
+    @media (min-width: 768px) {
+      .get-involved-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .involve-card {
+      padding: var(--space-2xl);
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border-subtle);
+      border-radius: var(--radius-md);
+      text-align: center;
+      transition: all var(--transition-base);
+    }
+
+    .involve-card:hover {
+      border-color: var(--color-border);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-gold);
+    }
+
+    .involve-card__icon {
+      font-size: var(--text-3xl);
+      margin-bottom: var(--space-md);
+      line-height: 1;
+    }
+
+    .involve-card__title {
+      font-family: var(--font-subheading);
+      font-size: var(--text-lg);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-sm);
+      letter-spacing: var(--tracking-wide);
+    }
+
+    .involve-card__text {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: var(--leading-relaxed);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Shared Header -->
+  <div id="site-header"></div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero hero--page">
+      <div class="hero-ornament hero-ornament--tl"></div>
+      <div class="hero-ornament hero-ornament--tr"></div>
+      <div class="hero-ornament hero-ornament--bl"></div>
+      <div class="hero-ornament hero-ornament--br"></div>
+
+      <div class="hero-content">
+        <span class="hero__label" data-aos="fade-in-slow">परिचय</span>
+        <h1 class="hero__title" data-aos="fade-up" data-aos-delay="200">
+          इस परियोजना के<br><span class="text-gold">बारे में</span>
+        </h1>
+        <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="400">
+          यह अभिलेखागार क्यों बनाया गया, किसने बनाया, और भारत के असली इतिहास को दर्ज करने के मिशन के बारे में।
+        </p>
+      </div>
+
+      <div class="hero-deco-line"></div>
+    </section>
+
+    <!-- ===== SECTION 1: THE MISSION ===== -->
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">हमारा उद्देश्य</span>
+          <h2 class="section-header__title"><span class="text-gold">मिशन</span></h2>
+        </div>
+
+        <div class="content-body">
+          <p class="lead" data-aos="fade-up">
+            यह वेबसाइट <a href="https://bharatfiles.com" target="_blank" rel="noopener" style="color: var(--color-gold); font-weight: 600;">भारत फाइल्स पहल</a> का हिस्सा है, जो प्राथमिक ऐतिहासिक स्रोतों का उपयोग करके भारत के वास्तविक, बिना लीपापोती के इतिहास को उजागर करने और प्रलेखित करने के लिए समर्पित है। यह पहल 15 से अधिक समर्पित अभिलेखागार संचालित करती है जो प्रमुख ऐतिहासिक व्यक्तियों को कवर करते हैं जिनका भारतीय सभ्यता पर वास्तविक प्रभाव मुख्यधारा की शिक्षा से व्यवस्थित रूप से अस्पष्ट, साफ-सुथरा या हटा दिया गया है।
+          </p>
+          <p data-aos="fade-up">
+            अलाउद्दीन खिलजी अभिलेखागार नेटवर्क में सबसे व्यापक में से एक है। यह खिलजी के बीस वर्षों के शासनकाल और भारतीय सभ्यता पर उसके विनाशकारी प्रभाव का पूर्ण, सत्यापन योग्य विवरण तैयार करने के लिए प्राथमिक फारसी ऐतिहासिक ग्रंथों, आधुनिक शैक्षणिक विद्वत्ता और पुरातात्विक साक्ष्य को एक साथ लाता है। हर दावा फुटनोट किया गया है। हर स्रोत उद्धृत है। हर पाठक को स्वतंत्र रूप से सत्यापित करने के लिए आमंत्रित किया जाता है।
+          </p>
+
+          <div class="mission-highlight" data-aos="fade-up">
+            <p>
+              <strong style="color: var(--color-gold);">हमारी प्रतिबद्धता:</strong> हम वही प्रस्तुत करते हैं जो ऐतिहासिक अभिलेख कहता है, जैसा कि उस काल के इतिहासकारों ने स्वयं दर्ज किया। हम गढ़ते नहीं, बढ़ा-चढ़ाकर नहीं कहते, या सनसनीखेज नहीं बनाते। प्राथमिक स्रोत स्वयं बोलते हैं &mdash; और वे बिना किसी अलंकरण के पर्याप्त विनाशकारी हैं।
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 2: WHY THIS MATTERS ===== -->
+    <section class="section section--dark">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">संदर्भ</span>
+          <h2 class="section-header__title">यह क्यों <span class="text-gold">मायने रखता है</span></h2>
+        </div>
+
+        <div class="content-body">
+          <p data-aos="fade-up">
+            भारतीय शिक्षा ने व्यवस्थित रूप से मध्यकालीन आक्रमणों और उपमहाद्वीप के लोगों, संस्कृति और सभ्यता पर उनके प्रभाव के विवरणों को साफ-सुथरा बनाया है। दशकों तक, पाठ्यपुस्तकों ने दिल्ली सल्तनत को मुख्य रूप से प्रशासनिक नवाचार और सांस्कृतिक संश्लेषण के काल के रूप में प्रस्तुत किया, जबकि प्रलेखित मंदिर विध्वंस, सामूहिक हत्याओं, आर्थिक अधीनता और धार्मिक उत्पीड़न को छोड़ दिया या कम करके आंका गया जिसका प्राथमिक स्रोत विस्तार से वर्णन करते हैं।
+          </p>
+          <p data-aos="fade-up">
+            यह जीवित वास्तविकता और आधिकारिक कथा के बीच एक खतरनाक विसंगति पैदा करता है। लाखों भारतीय एक ऐसी सभ्यता के खंडहरों के बीच रहते हैं जिसे व्यवस्थित रूप से नष्ट किया गया &mdash; टूटे मंदिर स्तंभ मस्जिद के खंभों में पुन:उपयोग किए गए, पवित्र स्थल परिवर्तित या नष्ट किए गए, सांस्कृतिक परंपराएं बाधित &mdash; फिर भी जिस शिक्षा प्रणाली ने उनकी इतिहास की समझ बनाई, उसने वह स्पष्टीकरण नहीं दिया जो वे अपनी आंखों से देख सकते थे।
+          </p>
+          <p data-aos="fade-up">
+            यह अभिलेखागार उस अंतर को स्रोत-समर्थित प्रलेखन से पाटने का लक्ष्य रखता है। बयानबाजी या भावना से नहीं, बल्कि उन दरबारी इतिहासकारों के शब्दों से जिन्होंने इन शासकों की सेवा की, जमीन और खड़ी संरचनाओं में संरक्षित पुरातात्विक साक्ष्य से, और उन प्रमुख आधुनिक विद्वानों के विश्लेषण से जिन्होंने प्राथमिक स्रोतों का अध्ययन किया है।
+          </p>
+
+          <div class="callout callout--info" data-aos="fade-up">
+            <div class="callout__title">हमारे दृष्टिकोण पर एक नोट</div>
+            <p class="callout__text">
+              यह अभिलेखागार घृणा भड़काने या विभाजन को बढ़ावा देने का प्रयास नहीं करता। यह प्रलेखित ऐतिहासिक तथ्यों को प्रस्तुत करने का प्रयास करता है जिन्हें दबाया या अस्पष्ट किया गया है। जो हुआ उसे समझना &mdash; सटीक और पूर्ण रूप से &mdash; वास्तविक सामंजस्य, सूचित नागरिकता, और बची हुई सांस्कृतिक विरासत की रक्षा के लिए एक पूर्वशर्त है। अज्ञानता सद्भाव की नींव नहीं है; सत्य है।
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 3: OUR METHODOLOGY ===== -->
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">हम कैसे काम करते हैं</span>
+          <h2 class="section-header__title">हमारी <span class="text-gold">कार्यप्रणाली</span></h2>
+          <p class="section-header__subtitle">
+            इस वेबसाइट पर हर दावा स्थापित ऐतिहासिक पद्धति पर आधारित एक कठोर तीन-चरणीय सत्यापन प्रक्रिया का पालन करता है।
+          </p>
+        </div>
+
+        <div class="content-body">
+          <div class="methodology-step" data-aos="fade-up">
+            <div class="methodology-step__number">1</div>
+            <div class="methodology-step__content">
+              <h3>प्राथमिक स्रोत आधार</h3>
+              <p>
+                प्रत्येक ऐतिहासिक दावा प्राथमिक स्रोतों से शुरू होता है &mdash; ऐसे ग्रंथ जो उन घटनाओं के दौरान या तुरंत बाद लिखे गए जिनका वे वर्णन करते हैं। अलाउद्दीन खिलजी के शासनकाल के लिए, इनमें <a href="sources.html#barani-tarikh" style="color: var(--color-gold);">जियाउद्दीन बरनी की <em>तारीख-ए-फिरोज शाही</em></a>, <a href="sources.html#khusrau-khazain" style="color: var(--color-gold);">अमीर खुसरो की <em>खज़ाइन-उल-फुतूह</em></a>, और <a href="sources.html#isami-futuh" style="color: var(--color-gold);">इसामी की <em>फुतूह-उस-सलातीन</em></a> शामिल हैं। ये फारसी इतिवृत्त सल्तनत के प्रति सहानुभूतिपूर्ण मुस्लिम दरबारी इतिहासकारों द्वारा लिखे गए थे, जिससे अत्याचारों के उनके विवरण विशेष रूप से विश्वसनीय हैं &mdash; उन्होंने जो हिंसा दर्ज की वह उपलब्धि के रूप में प्रस्तुत की गई, आरोप के रूप में नहीं।
+              </p>
+            </div>
+          </div>
+
+          <div class="methodology-step" data-aos="fade-up">
+            <div class="methodology-step__number">2</div>
+            <div class="methodology-step__content">
+              <h3>आधुनिक विद्वान पुष्टि</h3>
+              <p>
+                प्राथमिक स्रोत दावों की पुष्टि आधुनिक शैक्षणिक विद्वत्ता के माध्यम से की जाती है। हम <a href="sources.html#lal-khaljis" style="color: var(--color-gold);">के.एस. लाल</a>, <a href="sources.html#majumdar-delhi" style="color: var(--color-gold);">आर.सी. मजूमदार</a>, <a href="sources.html#eaton-temples" style="color: var(--color-gold);">रिचर्ड ईटन</a>, <a href="sources.html#habib-economic" style="color: var(--color-gold);">इरफान हबीब</a>, और अन्य प्रमुख इतिहासकारों के कार्यों पर निर्भर करते हैं जिनके समीक्षित कार्यों ने आधुनिक ऐतिहासिक पद्धति के माध्यम से प्राथमिक स्रोतों का विश्लेषण, संदर्भीकरण और व्याख्या की है।
+              </p>
+            </div>
+          </div>
+
+          <div class="methodology-step" data-aos="fade-up">
+            <div class="methodology-step__number">3</div>
+            <div class="methodology-step__content">
+              <h3>पुरातात्विक एवं भौतिक साक्ष्य</h3>
+              <p>
+                जहां संभव हो, लिखित विवरणों को <a href="sources.html#asi-reports" style="color: var(--color-gold);">भारतीय पुरातत्व सर्वेक्षण (ASI)</a> और अन्य पेशेवर पुरातात्विक संस्थाओं के पुरातात्विक साक्ष्य द्वारा समर्थित किया जाता है। चित्तौड़ किला, कुतुब परिसर और सोमनाथ मंदिर जैसे स्थलों पर भौतिक साक्ष्य लिखित अभिलेख की मूर्त, निरीक्षण योग्य प्रमाण के साथ पुष्टि करता है।
+              </p>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: var(--space-2xl);" data-aos="fade-up">
+            <a href="sources.html" class="btn btn--primary btn--lg">
+              सभी स्रोत देखें <span class="btn-arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 4: PROJECT FOUNDER ===== -->
+    <section class="section section--dark">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">नेतृत्व</span>
+          <h2 class="section-header__title">परियोजना <span class="text-gold">संस्थापक</span></h2>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="100">
+          <div class="founder-card">
+            <div class="founder-image">
+              <img src="../../images/founder/digant-sharma.webp"
+                   alt="दिगंत शर्मा, भारत फाइल्स पहल के संस्थापक"
+                   width="180" height="180" loading="lazy">
+            </div>
+            <div class="founder-info">
+              <h2 class="founder-name">दिगंत शर्मा</h2>
+              <p class="founder-title">संस्थापक, भारत फाइल्स पहल</p>
+              <p class="founder-bio">दूरदर्शी नेता और उद्यमी। एस रिटेलर वर्ल्डवाइड प्रा. लि. के अध्यक्ष एवं प्रबंध निदेशक तथा टोरस ग्रुप/टोरस इनोटेक प्रा. लि. के अध्यक्ष। महाराष्ट्र के मुख्यमंत्री एकनाथ शिंदे से कृषि में उत्कृष्टता पुरस्कार प्राप्त &mdash; 1,00,000 से अधिक आदिवासी किसानों के जीवन को बदलने के लिए।</p>
+              <div class="founder-links">
+                <a href="https://digantsharma.com" target="_blank" rel="noopener">digantsharma.com</a>
+                <a href="mailto:im@diganthsharma.com">im@diganthsharma.com</a>
+                <a href="tel:+919920808363">+91-9920808363</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 5: THE BHARAT FILES NETWORK ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">नेटवर्क</span>
+          <h2 class="section-header__title">भारत फाइल्स <span class="text-gold">नेटवर्क</span></h2>
+          <p class="section-header__subtitle">
+            अलाउद्दीन खिलजी अभिलेखागार <a href="https://bharatfiles.com" target="_blank" rel="noopener" style="color: var(--color-gold);">भारत फाइल्स पहल</a> के 15 से अधिक समर्पित ऐतिहासिक अभिलेखागारों में से एक है। प्रत्येक अभिलेखागार उसी कठोर, स्रोत-समर्थित कार्यप्रणाली का उपयोग करके एक प्रमुख ऐतिहासिक व्यक्ति को प्रलेखित करता है।
+          </p>
+        </div>
+
+        <div class="grid-3" data-aos="fade-up" data-aos-delay="100">
+          <a href="https://mahmudofghazni.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">महमूद गजनवी</div>
+              <div class="sister-site-card__period">971 &ndash; 1030 ईसवी</div>
+            </div>
+          </a>
+          <a href="https://muhammadmaghori.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">मुहम्मद घोरी</div>
+              <div class="sister-site-card__period">1149 &ndash; 1206 ईसवी</div>
+            </div>
+          </a>
+          <a href="https://qutbuddinaibak.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">कुतुबुद्दीन ऐबक</div>
+              <div class="sister-site-card__period">1150 &ndash; 1210 ईसवी</div>
+            </div>
+          </a>
+          <a href="https://muhammadbintughlaq.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">मुहम्मद बिन तुगलक</div>
+              <div class="sister-site-card__period">1290 &ndash; 1351 ईसवी</div>
+            </div>
+          </a>
+          <a href="https://firozshahtuqhlaq.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">फिरोज शाह तुगलक</div>
+              <div class="sister-site-card__period">1309 &ndash; 1388 ईसवी</div>
+            </div>
+          </a>
+          <a href="https://aurangezebalamgir.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">औरंगजेब आलमगीर</div>
+              <div class="sister-site-card__period">1618 &ndash; 1707 ईसवी</div>
+            </div>
+          </a>
+          <a href="https://muhammadbinqasim.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">मुहम्मद बिन कासिम</div>
+              <div class="sister-site-card__period">695 &ndash; 715 ईसवी</div>
+            </div>
+          </a>
+          <a href="https://bahadurshahzafar.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">बहादुर शाह ज़फर</div>
+              <div class="sister-site-card__period">1775 &ndash; 1862 ईसवी</div>
+            </div>
+          </a>
+          <a href="https://sikandarlodi.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">सिकंदर लोदी</div>
+              <div class="sister-site-card__period">1458 &ndash; 1517 ईसवी</div>
+            </div>
+          </a>
+          <a href="https://sabuktigin.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">सबुक्तगीन</div>
+              <div class="sister-site-card__period">942 &ndash; 997 ईसवी</div>
+            </div>
+          </a>
+          <a href="https://bahlullodi.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">बहलोल लोदी</div>
+              <div class="sister-site-card__period">1401 &ndash; 1489 ईसवी</div>
+            </div>
+          </a>
+          <a href="https://ibrahimlodi.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">इब्राहीम लोदी</div>
+              <div class="sister-site-card__period">1480 &ndash; 1526 ईसवी</div>
+            </div>
+          </a>
+          <a href="https://ghiyasuddintuqhlaq.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">गयासुद्दीन तुगलक</div>
+              <div class="sister-site-card__period">1284 &ndash; 1325 ईसवी</div>
+            </div>
+          </a>
+          <a href="https://khwajaahansayyid.com" target="_blank" rel="noopener" class="sister-site-card">
+            <div>
+              <div class="sister-site-card__name">ख्वाजा अहन सैयद</div>
+              <div class="sister-site-card__period">सैयद वंश</div>
+            </div>
+          </a>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-2xl);" data-aos="fade-up">
+          <a href="https://bharatfiles.com" target="_blank" rel="noopener" class="btn btn--outline btn--lg">
+            भारत फाइल्स देखें <span class="btn-arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 6: GET INVOLVED ===== -->
+    <section class="section section--dark">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">प्रयास में शामिल हों</span>
+          <h2 class="section-header__title">सहभागी <span class="text-gold">बनें</span></h2>
+          <p class="section-header__subtitle">
+            भारत के ऐतिहासिक अभिलेख को पुनः प्राप्त करना एक सामूहिक प्रयास है। आप इस मिशन में कैसे योगदान कर सकते हैं, यहां जानें।
+          </p>
+        </div>
+
+        <div class="get-involved-grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="involve-card">
+            <div class="involve-card__icon" style="color: var(--color-gold);">&#9878;</div>
+            <h3 class="involve-card__title">इस अभिलेखागार को साझा करें</h3>
+            <p class="involve-card__text">
+              इस वेबसाइट को छात्रों, शिक्षकों, शोधकर्ताओं और भारतीय इतिहास में रुचि रखने वाले किसी भी व्यक्ति के साथ साझा करें। जितने अधिक लोग इन प्रलेखित प्राथमिक स्रोतों तक पहुंचेंगे, साफ-सुथरी कथा को बनाए रखना उतना ही कठिन हो जाएगा।
+            </p>
+          </div>
+
+          <div class="involve-card">
+            <div class="involve-card__icon" style="color: var(--color-gold);">&#9998;</div>
+            <h3 class="involve-card__title">शोध में योगदान करें</h3>
+            <p class="involve-card__text">
+              यदि आपके पास प्राथमिक स्रोत, अनुवाद, या विद्वान कार्यों तक पहुंच है जो अभी तक हमारी ग्रंथसूची में शामिल नहीं हैं, तो हम योगदान का स्वागत करते हैं। सभी प्रस्तुतियां शामिल करने से पहले स्थापित मानकों के विरुद्ध सत्यापित की जाती हैं।
+            </p>
+          </div>
+
+          <div class="involve-card">
+            <div class="involve-card__icon" style="color: var(--color-gold);">&#9993;</div>
+            <h3 class="involve-card__title">टीम से संपर्क करें</h3>
+            <p class="involve-card__text">
+              सुधार, शोध योगदान, साझेदारी पूछताछ, या मीडिया अनुरोधों के लिए, हमारी टीम से संपर्क करें। हम सभी गंभीर पूछताछ का उत्तर देते हैं। ईमेल: <a href="mailto:im@diganthsharma.com" style="color: var(--color-gold);">im@diganthsharma.com</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="callout callout--info" data-aos="fade-up" style="margin-top: var(--space-2xl);">
+          <div class="callout__title">सुधार नीति</div>
+          <p class="callout__text">
+            हम ऐतिहासिक सटीकता के प्रति प्रतिबद्ध हैं। यदि आपको इस वेबसाइट पर कोई तथ्यात्मक त्रुटि, गलत स्रोत, या अशुद्ध उद्धरण मिलता है, तो कृपया विशिष्ट दावे, उस पृष्ठ जिस पर यह प्रकट होता है, और सुधार के साक्ष्य के साथ हमसे संपर्क करें। हम तुरंत जांच करेंगे और जहां उचित होगा वहां सुधार जारी करेंगे। हमारी विश्वसनीयता हमारी सटीकता पर निर्भर करती है।
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared Footer -->
+  <div id="site-footer"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="../../js/components-hi.js"></script>
+  <script src="../../js/nav.js"></script>
+  <script src="../../js/language-toggle.js"></script>
+  <script src="../../js/scroll-animations.js"></script>
+</body>
+</html>

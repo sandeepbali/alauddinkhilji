@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>स्रोत एवं संदर्भ | अलाउद्दीन खिलजी</title>
+  <meta name="description" content="अलाउद्दीन खिलजी अभिलेखागार में हर दावे का समर्थन करने वाले प्राथमिक ऐतिहासिक ग्रंथों, समीक्षित शोध, और पुरातात्विक साक्ष्य की पूर्ण ग्रंथसूची। सब कुछ सत्यापित करें।">
+  <link rel="canonical" href="https://alauddinkhilji.com/hi/pages/sources.html">
+  <link rel="alternate" hreflang="en" href="https://alauddinkhilji.com/pages/sources.html">
+  <link rel="alternate" hreflang="hi" href="https://alauddinkhilji.com/hi/pages/sources.html">
+  <meta property="og:title" content="स्रोत एवं संदर्भ | अलाउद्दीन खिलजी">
+  <meta property="og:description" content="अलाउद्दीन खिलजी अभिलेखागार में हर दावे का समर्थन करने वाले प्राथमिक ऐतिहासिक ग्रंथों, समीक्षित शोध, और पुरातात्विक साक्ष्य की पूर्ण ग्रंथसूची।">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://alauddinkhilji.com/hi/pages/sources.html">
+  <meta property="og:site_name" content="अलाउद्दीन खिलजी - भारत फाइल्स पहल">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/variables.css">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/header.css">
+  <link rel="stylesheet" href="../../css/footer.css">
+  <link rel="stylesheet" href="../../css/hero.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/animations.css">
+  <link rel="stylesheet" href="../../css/utilities.css">
+  <link rel="stylesheet" href="../../css/hindi.css">
+
+  <style>
+    /* Sources page-specific styles */
+    .source-entry {
+      position: relative;
+      padding: var(--space-xl) var(--space-2xl);
+      margin-bottom: var(--space-xl);
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border-subtle);
+      border-left: 3px solid var(--color-gold);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      transition: all var(--transition-base);
+    }
+
+    .source-entry:hover {
+      border-left-color: var(--color-gold-bright);
+      background: var(--color-bg-card-hover);
+      box-shadow: var(--shadow-gold);
+    }
+
+    .source-entry:target {
+      border-left-color: var(--color-gold-bright);
+      background: rgba(201, 168, 76, 0.06);
+      box-shadow: 0 0 0 1px var(--color-gold-dim), var(--shadow-gold);
+      animation: highlightPulse 2s ease-out;
+    }
+
+    @keyframes highlightPulse {
+      0% { box-shadow: 0 0 0 4px rgba(201, 168, 76, 0.3), var(--shadow-gold); }
+      100% { box-shadow: 0 0 0 1px var(--color-gold-dim), var(--shadow-gold); }
+    }
+
+    .source-entry__title {
+      font-family: var(--font-subheading);
+      font-size: var(--text-xl);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-xs);
+      letter-spacing: var(--tracking-wide);
+    }
+
+    .source-entry__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      margin-bottom: var(--space-md);
+    }
+
+    .source-entry__meta-item {
+      font-family: var(--font-ui);
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-wide);
+      text-transform: uppercase;
+    }
+
+    .source-entry__meta-label {
+      color: var(--color-gold-dim);
+      margin-right: var(--space-2xs);
+    }
+
+    .source-entry__meta-value {
+      color: var(--color-text-secondary);
+    }
+
+    .source-entry__description {
+      font-size: var(--text-base);
+      color: var(--color-text-secondary);
+      line-height: var(--leading-relaxed);
+      margin-bottom: var(--space-md);
+    }
+
+    .source-entry__significance {
+      font-family: var(--font-ui);
+      font-size: var(--text-sm);
+      color: var(--color-gold);
+      padding: var(--space-sm) var(--space-md);
+      background: var(--color-gold-glow);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--color-gold-muted);
+      display: inline-block;
+    }
+
+    .source-entry__significance strong {
+      font-weight: var(--weight-semibold);
+      color: var(--color-gold-bright);
+    }
+
+    .source-entry__id-anchor {
+      position: absolute;
+      top: var(--space-sm);
+      right: var(--space-md);
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-text-muted);
+      opacity: 0;
+      transition: opacity var(--transition-fast);
+    }
+
+    .source-entry:hover .source-entry__id-anchor {
+      opacity: 0.6;
+    }
+
+    .section-anchor-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-2xl);
+    }
+
+    .section-anchor-nav a {
+      font-family: var(--font-ui);
+      font-size: var(--text-xs);
+      font-weight: var(--weight-medium);
+      letter-spacing: var(--tracking-wider);
+      text-transform: uppercase;
+      color: var(--color-gold-dim);
+      padding: var(--space-xs) var(--space-md);
+      border: 1px solid var(--color-border-subtle);
+      border-radius: var(--radius-full);
+      text-decoration: none;
+      transition: all var(--transition-fast);
+    }
+
+    .section-anchor-nav a:hover {
+      color: var(--color-gold);
+      border-color: var(--color-gold-dim);
+      background: var(--color-gold-glow);
+    }
+
+    .archive-link-card {
+      display: block;
+      padding: var(--space-lg) var(--space-xl);
+      margin-bottom: var(--space-md);
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border-subtle);
+      border-left: 3px solid var(--color-gold);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      text-decoration: none;
+      transition: all var(--transition-fast);
+    }
+
+    .archive-link-card:hover {
+      border-left-color: var(--color-gold-bright);
+      background: var(--color-bg-card-hover);
+    }
+
+    .archive-link-card__name {
+      font-family: var(--font-ui);
+      font-size: var(--text-sm);
+      font-weight: var(--weight-semibold);
+      color: var(--color-gold);
+      margin-bottom: var(--space-2xs);
+    }
+
+    .archive-link-card__desc {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: var(--leading-relaxed);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Shared Header -->
+  <div id="site-header"></div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero hero--page">
+      <div class="hero-ornament hero-ornament--tl"></div>
+      <div class="hero-ornament hero-ornament--tr"></div>
+      <div class="hero-ornament hero-ornament--bl"></div>
+      <div class="hero-ornament hero-ornament--br"></div>
+
+      <div class="hero-content">
+        <span class="hero__label" data-aos="fade-in-slow">संदर्भ पुस्तकालय</span>
+        <h1 class="hero__title" data-aos="fade-up" data-aos-delay="200">
+          स्रोत एवं<br><span class="text-gold">संदर्भ</span>
+        </h1>
+        <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="400">
+          इस वेबसाइट पर हर दावा प्राथमिक ऐतिहासिक ग्रंथों, समीक्षित शोध और पुरातात्विक साक्ष्य पर आधारित है। सब कुछ सत्यापित करें।
+        </p>
+      </div>
+
+      <div class="hero-deco-line"></div>
+    </section>
+
+    <!-- ===== QUICK NAVIGATION ===== -->
+    <section class="section">
+      <div class="container container--narrow" data-aos="fade-up">
+        <div class="content-body">
+          <p class="lead">
+            यह पृष्ठ संपूर्ण अलाउद्दीन खिलजी अभिलेखागार की मास्टर ग्रंथसूची के रूप में कार्य करता है। सभी अध्यायों में हर फुटनोट, उद्धरण और दावा इस पृष्ठ की किसी प्रविष्टि से जुड़ा है। नीचे दिए गए अनुभाग लिंक का उपयोग करके नेविगेट करें, या साइट पर किसी भी उद्धरण संख्या पर क्लिक करके सीधे संबंधित स्रोत पर जाएं।
+          </p>
+          <div class="section-anchor-nav" data-aos="fade-up" data-aos-delay="100">
+            <a href="#primary-sources">प्राथमिक स्रोत</a>
+            <a href="#modern-scholarship">आधुनिक विद्वान कार्य</a>
+            <a href="#archaeological-evidence">पुरातात्विक साक्ष्य</a>
+            <a href="#digital-archives">डिजिटल अभिलेखागार</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 1: PRIMARY HISTORICAL SOURCES ===== -->
+    <section class="section section--dark" id="primary-sources">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">श्रेणी 01</span>
+          <h2 class="section-header__title">प्राथमिक <span class="text-gold">ऐतिहासिक स्रोत</span></h2>
+          <p class="section-header__subtitle">
+            दिल्ली सल्तनत काल के दौरान या उसके तुरंत बाद दरबारी इतिहासकारों, कवियों और वृत्तांतकारों द्वारा लिखे गए समकालीन और निकट-समकालीन ग्रंथ। ये वे मूलभूत दस्तावेज हैं जिन पर समस्त परवर्ती विद्वत्ता आधारित है।
+          </p>
+        </div>
+
+        <div class="callout callout--info" data-aos="fade-up">
+          <div class="callout__title">प्राथमिक स्रोतों के बारे में</div>
+          <p class="callout__text">
+            प्राथमिक स्रोत वे ग्रंथ हैं जो उन घटनाओं के दौरान या तुरंत बाद लिखे गए जिनका वे वर्णन करते हैं। अलाउद्दीन खिलजी के शासनकाल (1296&ndash;1316 ईसवी) के लिए, सबसे महत्वपूर्ण प्राथमिक स्रोत दिल्ली सल्तनत की सेवा करने वाले मुस्लिम दरबारी इतिहासकारों और कवियों द्वारा लिखे गए थे। उनके विवरण विशेष रूप से मूल्यवान हैं क्योंकि वे शासकों के प्रति सहानुभूतिपूर्ण दृष्टिकोण से घटनाओं का वर्णन करते हैं &mdash; अर्थात जो अत्याचार वे दर्ज करते हैं, वे उपलब्धियों के रूप में प्रस्तुत किए गए थे, आरोपों के रूप में नहीं। यह उनकी गवाही को साक्ष्य के रूप में विशेष रूप से विश्वसनीय बनाता है।
+          </p>
+        </div>
+
+        <!-- Source: Barani - Tarikh-i-Firoz Shahi -->
+        <div class="source-entry" id="barani-tarikh" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#barani-tarikh</span>
+          <h3 class="source-entry__title">तारीख-ए-फिरोज शाही</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">लेखक:</span>
+              <span class="source-entry__meta-value">जियाउद्दीन बरनी</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">तिथि:</span>
+              <span class="source-entry__meta-value">लगभग 1357 ईसवी</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">भाषा:</span>
+              <span class="source-entry__meta-value">फारसी</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">दरबारी इतिवृत्त</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            जियाउद्दीन बरनी एक दरबारी इतिहासकार थे जो अलाउद्दीन खिलजी के युग में जीवित थे और बाद में मुहम्मद बिन तुगलक के दरबार में सेवा की। उनका इतिवृत्त गयासुद्दीन बलबन के शासनकाल से लेकर फिरोज शाह तुगलक तक दिल्ली सल्तनत के इतिहास को शामिल करता है। अलाउद्दीन खिलजी पर अनुभाग मध्यकालीन भारत के किसी भी शासक के सबसे विस्तृत ऐतिहासिक विवरणों में से हैं, जो उनकी प्रशासनिक नीतियों, बाजार नियंत्रण प्रणाली, सैन्य अभियानों, कर व्यवस्था, और हिंदू आबादी के प्रति व्यवहार का व्यापक प्रलेखन प्रदान करते हैं। बरनी ने हिंदू आबादी के प्रति खिलजी की नीतियों के संबंध में उनके स्वयं के शब्दों को दर्ज किया है, जिससे यह ग्रंथ एक अपरिहार्य प्राथमिक स्रोत बनता है।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> खिलजी के प्रशासन, नीतियों और अभियानों का सबसे विस्तृत विवरण। इसमें स्वयं खिलजी के प्रत्यक्ष उद्धरण हैं। आर्थिक शोषण और हिंदू-विरोधी नीतियों का प्राथमिक स्रोत।
+          </span>
+        </div>
+
+        <!-- Source: Khusrau - Khazain-ul-Futuh -->
+        <div class="source-entry" id="khusrau-khazain" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#khusrau-khazain</span>
+          <h3 class="source-entry__title">खज़ाइन-उल-फुतूह (विजय के खजाने)</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">लेखक:</span>
+              <span class="source-entry__meta-value">अमीर खुसरो</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">तिथि:</span>
+              <span class="source-entry__meta-value">लगभग 1311 ईसवी</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">भाषा:</span>
+              <span class="source-entry__meta-value">फारसी</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">दरबारी काव्य / इतिवृत्त</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            अमीर खुसरो अलाउद्दीन खिलजी के आधिकारिक दरबारी कवि थे और उनके द्वारा वर्णित कई घटनाओं के प्रत्यक्ष साक्षी थे। <em>खज़ाइन-उल-फुतूह</em> एक गद्य कृति है जो खिलजी के सैन्य अभियानों का प्रत्यक्ष विवरण प्रदान करती है, जिसमें चित्तौड़, गुजरात और दक्कन अभियानों की घेराबंदी शामिल है। खिलजी की सेवा में एक कवि और प्रचारक के रूप में लिखते हुए, खुसरो विध्वंस और नरसंहार का उत्सवपूर्ण भाषा में वर्णन करते हैं, जिससे उनके विवरण साक्ष्य के रूप में अद्वितीय रूप से मूल्यवान हो जाते हैं &mdash; उन्होंने जो हिंसा दर्ज की वह उपलब्धि के रूप में प्रस्तुत की गई, आलोचना के रूप में नहीं।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> चित्तौड़, गुजरात और दक्कन सहित सैन्य अभियानों का प्रत्यक्ष साक्षी विवरण। खिलजी के जीवनकाल में उनके अपने दरबारी कवि द्वारा लिखा गया। मंदिर विध्वंस और नरसंहार का उत्सव के रूप में वर्णन।
+          </span>
+        </div>
+
+        <!-- Source: Khusrau - Tarikh-i-Alai -->
+        <div class="source-entry" id="khusrau-alai" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#khusrau-alai</span>
+          <h3 class="source-entry__title">तारीख-ए-अलाई</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">लेखक:</span>
+              <span class="source-entry__meta-value">अमीर खुसरो</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">तिथि:</span>
+              <span class="source-entry__meta-value">लगभग 1311 ईसवी</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">भाषा:</span>
+              <span class="source-entry__meta-value">फारसी</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">ऐतिहासिक मसनवी (पद्य इतिवृत्त)</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            <em>आशिका</em> के नाम से भी जानी जाने वाली <em>तारीख-ए-अलाई</em> अमीर खुसरो की एक मसनवी (पद्य कथा) है जो विशेष रूप से अलाउद्दीन खिलजी के सैन्य अभियानों को कवर करती है। काव्यात्मक रूप में लिखी गई, यह चित्तौड़ की विजय और अन्य सैन्य अभियानों का विस्तृत विवरण प्रदान करती है। यह कृति खिलजी की सैन्य उपलब्धियों को श्रद्धांजलि के रूप में रची गई थी और <em>खज़ाइन-उल-फुतूह</em> के गद्य विवरणों में मूल्यवान पूरक विवरण प्रदान करती है।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> खिलजी के अभियानों को काव्यात्मक रूप में विशेष रूप से कवर करता है। विजयों के बारे में अतिरिक्त वर्णनात्मक विवरण के साथ खज़ाइन-उल-फुतूह के गद्य विवरणों का पूरक।
+          </span>
+        </div>
+
+        <!-- Source: Isami - Futuh-us-Salatin -->
+        <div class="source-entry" id="isami-futuh" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#isami-futuh</span>
+          <h3 class="source-entry__title">फुतूह-उस-सलातीन</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">लेखक:</span>
+              <span class="source-entry__meta-value">इसामी</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">तिथि:</span>
+              <span class="source-entry__meta-value">लगभग 1350 ईसवी</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">भाषा:</span>
+              <span class="source-entry__meta-value">फारसी</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">स्वतंत्र इतिवृत्त</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            इसामी की <em>फुतूह-उस-सलातीन</em> दिल्ली सल्तनत का एक स्वतंत्र काव्यात्मक इतिवृत्त है, जो बहमनी सुल्तान के संरक्षण में दक्कन में लिखा गया। बरनी और खुसरो के विपरीत, इसामी ने दिल्ली दरबार के बाहर से लिखा, उन क्षेत्रों का दृष्टिकोण प्रदान किया जिन्होंने खिलजी के आदेश पर मलिक काफूर के दक्षिणी अभियानों के विनाश का प्रत्यक्ष अनुभव किया। यह कृति गजनवियों से लेकर तुगलकों तक भारत की मुस्लिम विजय को कवर करती है और दक्कन अभियानों के विवरणों के लिए विशेष रूप से मूल्यवान है।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> दिल्ली दरबार के बाहर लिखा गया स्वतंत्र इतिवृत्त। दक्कन का दृष्टिकोण प्रदान करता है, जिसने मलिक काफूर के अभियानों का सबसे अधिक प्रभाव झेला। दिल्ली-आधारित विवरणों की पुष्टि और पूरक।
+          </span>
+        </div>
+
+        <!-- Source: Jayasi - Padmavat -->
+        <div class="source-entry" id="jayasi-padmavat" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#jayasi-padmavat</span>
+          <h3 class="source-entry__title">पद्मावत</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">लेखक:</span>
+              <span class="source-entry__meta-value">मलिक मुहम्मद जायसी</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">तिथि:</span>
+              <span class="source-entry__meta-value">1540 ईसवी</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">भाषा:</span>
+              <span class="source-entry__meta-value">अवधी</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">सूफी रूपक काव्य</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            मलिक मुहम्मद जायसी की <em>पद्मावत</em> एक सूफी रूपक कविता है जो अलाउद्दीन खिलजी के चित्तौड़ घेरे के लगभग 230 वर्ष बाद लिखी गई। यह पद्मावती किंवदंती का मूल है &mdash; एक सुंदर राजपूत रानी की कहानी जिसकी सुंदरता ने खिलजी को चित्तौड़ किले की घेराबंदी करने के लिए प्रेरित किया। यह कविता एक रहस्यवादी काल्पनिक कृति है, ऐतिहासिक विवरण नहीं, जो सूफी आध्यात्मिक अवधारणाओं के लिए चित्तौड़ घेरे को एक रूपक ढांचे के रूप में उपयोग करती है। अपनी काल्पनिक प्रकृति के बावजूद, यह आधुनिक संस्कृति में खिलजी की लोकप्रिय कथा का आधार बन गई, जिसमें 2018 की बॉलीवुड फिल्म <em>पद्मावत</em> भी शामिल है।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> पद्मावती किंवदंती का मूल। ऐतिहासिक स्रोत नहीं &mdash; यह घटनाओं के 230 वर्ष बाद लिखी गई एक सूफी रूपक कविता है। यह समझने के लिए महत्वपूर्ण कि कैसे लोकप्रिय कथा में कल्पना ने ऐतिहासिक तथ्य का स्थान ले लिया।
+          </span>
+        </div>
+
+        <!-- Source: Siraj - Tabaqat-i-Nasiri -->
+        <div class="source-entry" id="siraj-tabaqat" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#siraj-tabaqat</span>
+          <h3 class="source-entry__title">तबकात-ए-नासिरी</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">लेखक:</span>
+              <span class="source-entry__meta-value">मिनहाज-ए-सिराज</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">तिथि:</span>
+              <span class="source-entry__meta-value">लगभग 1260 ईसवी</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">भाषा:</span>
+              <span class="source-entry__meta-value">फारसी</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">सामान्य इतिहास / इतिवृत्त</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            मिनहाज-ए-सिराज की <em>तबकात-ए-नासिरी</em> मुस्लिम जगत के सबसे प्रारंभिक व्यापक इतिहासों में से एक है, जो सुल्तान नासिरुद्दीन महमूद के अधीन दिल्ली सल्तनत के दरबार में लिखा गया। यद्यपि यह अलाउद्दीन खिलजी के शासनकाल से कई दशक पूर्व का है, यह प्रारंभिक दिल्ली सल्तनत की राजनीतिक, सैन्य और प्रशासनिक संरचनाओं को समझने के लिए आवश्यक संदर्भ प्रदान करता है जिन्हें खिलजी ने विरासत में पाया और विस्तारित किया। इतिवृत्त भारत में मुस्लिम शासन की स्थापना, नालंदा विश्वविद्यालय के विनाश, और विजय और मंदिर विध्वंस के उन प्रतिमानों को कवर करता है जो खिलजी के युग से पहले स्थापित हुए थे।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> प्रारंभिक दिल्ली सल्तनत काल के लिए महत्वपूर्ण संदर्भ प्रदान करता है। विजय, मंदिर विध्वंस और धार्मिक उत्पीड़न के उन प्रतिमानों को स्थापित करता है जिन्हें खिलजी ने विरासत में पाया और तीव्र किया।
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 2: MODERN SCHOLARLY WORKS ===== -->
+    <section class="section" id="modern-scholarship">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">श्रेणी 02</span>
+          <h2 class="section-header__title">आधुनिक <span class="text-gold">विद्वान कार्य</span></h2>
+          <p class="section-header__subtitle">
+            प्रमुख इतिहासकारों द्वारा लिखित समीक्षित शैक्षणिक कार्य जो प्राथमिक स्रोतों का विश्लेषण, संदर्भीकरण और व्याख्या करते हैं। ये कार्य आलोचनात्मक विश्लेषण और आधुनिक ऐतिहासिक पद्धति प्रदान करते हैं।
+          </p>
+        </div>
+
+        <div class="callout callout--info" data-aos="fade-up">
+          <div class="callout__title">विद्वान दावों को कैसे सत्यापित करें</div>
+          <p class="callout__text">
+            यहां उद्धृत आधुनिक विद्वान कार्य विश्वविद्यालय पुस्तकालयों, JSTOR, Google Scholar और प्रमुख पुस्तक विक्रेताओं के माध्यम से उपलब्ध हैं। कई भारतीय विश्वविद्यालय पुस्तकालयों और अंतर-पुस्तकालय ऋण के माध्यम से उपलब्ध हैं। हम पाठकों को प्रोत्साहित करते हैं कि वे इन कार्यों को स्वतंत्र रूप से प्राप्त करें और इस वेबसाइट पर प्रस्तुत उद्धरणों और व्याख्याओं को सत्यापित करें।
+          </p>
+        </div>
+
+        <!-- Source: K.S. Lal -->
+        <div class="source-entry" id="lal-khaljis" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#lal-khaljis</span>
+          <h3 class="source-entry__title">History of the Khaljis (1290&ndash;1320)</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">लेखक:</span>
+              <span class="source-entry__meta-value">के.एस. लाल</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रथम प्रकाशन:</span>
+              <span class="source-entry__meta-value">1950 (संशोधित 1980)</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">शैक्षणिक मोनोग्राफ</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            प्रोफेसर के.एस. लाल का खिलजी वंश का निश्चायक अध्ययन अलाउद्दीन खिलजी के शासनकाल का सबसे व्यापक आधुनिक शैक्षणिक उपचार बना हुआ है। फारसी प्राथमिक स्रोतों के विस्तृत विश्लेषण पर आधारित, लाल ने राजनीतिक इतिहास, सैन्य अभियानों, प्रशासनिक सुधारों और खिलजी शासन के सामाजिक प्रभाव का प्रलेखन किया है। 1980 का संशोधित संस्करण अतिरिक्त प्राथमिक स्रोत विश्लेषण को शामिल करता है और मूल कार्य की आलोचनाओं का उत्तर देता है।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> खिलजी वंश पर निश्चायक आधुनिक शैक्षणिक मोनोग्राफ। खिलजी के शासनकाल से संबंधित प्राथमिक फारसी स्रोतों का सबसे व्यापक आधुनिक विश्लेषण।
+          </span>
+        </div>
+
+        <!-- Source: R.C. Majumdar -->
+        <div class="source-entry" id="majumdar-delhi" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#majumdar-delhi</span>
+          <h3 class="source-entry__title">History and Culture of the Indian People, Vol. VI: The Delhi Sultanate</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">संपादक:</span>
+              <span class="source-entry__meta-value">आर.सी. मजूमदार</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकाशक:</span>
+              <span class="source-entry__meta-value">भारतीय विद्या भवन</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">बहु-खंड संपादित संग्रह</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            प्रतिष्ठित इतिहासकार आर.सी. मजूमदार द्वारा संपादित, स्मारकीय <em>History and Culture of the Indian People</em> श्रृंखला का यह खंड दिल्ली सल्तनत काल का व्यापक उपचार प्रदान करता है। प्रमुख भारतीय इतिहासकारों के योगदान सल्तनत युग के राजनीतिक, सामाजिक, आर्थिक और सांस्कृतिक आयामों को कवर करते हैं। यह कार्य सल्तनत-युगीन हिंसा के धार्मिक आयामों से सीधे जुड़ने की अपनी तत्परता के लिए उल्लेखनीय है, जिसे कई अन्य सर्वेक्षण इतिहासों ने छोड़ दिया या कम करके आंका है।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> प्रामाणिक बहु-लेखक शैक्षणिक खंड। कठोर स्रोत विश्लेषण के साथ सल्तनत काल के राजनीतिक, सामाजिक, आर्थिक और सांस्कृतिक आयामों का व्यापक कवरेज।
+          </span>
+        </div>
+
+        <!-- Source: Richard Eaton -->
+        <div class="source-entry" id="eaton-temples" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#eaton-temples</span>
+          <h3 class="source-entry__title">Temple Desecration and Indo-Muslim States</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">लेखक:</span>
+              <span class="source-entry__meta-value">रिचर्ड एम. ईटन</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकाशित:</span>
+              <span class="source-entry__meta-value">Journal of Islamic Studies, 2000</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">समीक्षित शैक्षणिक लेख</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            रिचर्ड ईटन का प्रभावशाली शैक्षणिक विश्लेषण भारत-मुस्लिम शासन के काल में मंदिर विध्वंस के प्रतिमानों और प्रेरणाओं की जांच करता है। प्राथमिक स्रोतों की व्यवस्थित समीक्षा के आधार पर, ईटन कई शताब्दियों में मंदिर अपवित्रीकरण के उदाहरणों को वर्गीकृत और संदर्भित करते हैं। उनका कार्य दिल्ली सल्तनत काल में, अलाउद्दीन खिलजी के आदेशों के तहत किए गए मंदिर विध्वंस सहित, व्यवस्थित प्रकृति को समझने के लिए एक विश्लेषणात्मक ढांचा प्रदान करता है।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> मंदिर विध्वंस प्रतिमानों का समीक्षित शैक्षणिक विश्लेषण। धार्मिक स्थल विनाश के पैमाने और प्रकृति को समझने के लिए व्यवस्थित डेटा और विश्लेषणात्मक ढांचा प्रदान करता है।
+          </span>
+        </div>
+
+        <!-- Source: Irfan Habib -->
+        <div class="source-entry" id="habib-economic" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#habib-economic</span>
+          <h3 class="source-entry__title">Economic History of Medieval India</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">लेखक:</span>
+              <span class="source-entry__meta-value">इरफान हबीब</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">शैक्षणिक आर्थिक इतिहास</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            प्रोफेसर इरफान हबीब का मध्यकालीन भारत के आर्थिक इतिहास पर कार्य दिल्ली सल्तनत की आर्थिक संरचनाओं को समझने के लिए आवश्यक संदर्भ प्रदान करता है, जिसमें अलाउद्दीन खिलजी की बाजार नियंत्रण प्रणाली और कराधान नीतियां शामिल हैं। मध्यकालीन काल में कृषि संबंधों, राजस्व प्रणालियों और शहरी अर्थव्यवस्थाओं का हबीब का विश्लेषण यह समझने के लिए मूलभूत है कि खिलजी की आर्थिक नीतियां राजकला और लक्षित शोषण दोनों के साधन के रूप में कैसे कार्य करती थीं।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> मध्यकालीन भारतीय आर्थिक इतिहास पर अग्रणी प्राधिकारी। खिलजी के बाजार नियंत्रण और कराधान को व्यवस्थित शोषण के साधनों के रूप में समझने के लिए आवश्यक आर्थिक संदर्भ प्रदान करता है।
+          </span>
+        </div>
+
+        <!-- Source: Abraham Eraly -->
+        <div class="source-entry" id="eraly-wrath" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#eraly-wrath</span>
+          <h3 class="source-entry__title">The Age of Wrath: A History of the Delhi Sultanate</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">लेखक:</span>
+              <span class="source-entry__meta-value">अब्राहम इराली</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकाशक:</span>
+              <span class="source-entry__meta-value">पेंगुइन बुक्स इंडिया</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">कथात्मक इतिहास</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            अब्राहम इराली का दिल्ली सल्तनत का कथात्मक इतिहास इस काल का एक सुलभ लेकिन विद्वतापूर्ण विवरण प्रदान करता है। शैक्षणिक इतिहासकारों द्वारा उपयोग किए गए उन्हीं फारसी प्राथमिक स्रोतों पर आधारित, इराली सल्तनत की राजनीतिक, सामाजिक और सांस्कृतिक दुनिया को सजीव विवरण के साथ पुनर्निर्मित करते हैं। अलाउद्दीन खिलजी के शासनकाल का उनका उपचार प्राथमिक स्रोतों में प्रलेखित हिंसा से निर्भीक जुड़ाव के लिए उल्लेखनीय है, साथ ही ऐतिहासिक साक्ष्य के कठोर मानकों को बनाए रखता है।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> कठोर प्राथमिक स्रोत विश्लेषण पर आधारित सुलभ कथात्मक इतिहास। शैक्षणिक शब्दावली के बिना विस्तृत कवरेज चाहने वाले पाठकों के लिए उत्कृष्ट प्रवेश बिंदु।
+          </span>
+        </div>
+
+        <!-- Source: Satish Chandra -->
+        <div class="source-entry" id="chandra-medieval" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#chandra-medieval</span>
+          <h3 class="source-entry__title">History of Medieval India</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">लेखक:</span>
+              <span class="source-entry__meta-value">सतीश चंद्र</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकाशक:</span>
+              <span class="source-entry__meta-value">ओरिएंट ब्लैकस्वान</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">मुख्यधारा शैक्षणिक पाठ्यपुस्तक</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            सतीश चंद्र की <em>History of Medieval India</em> दिल्ली सल्तनत काल पर मुख्यधारा पाठ्यपुस्तक दृष्टिकोण का प्रतिनिधित्व करती है और भारतीय विश्वविद्यालयों में व्यापक रूप से उपयोग की जाती है। यह स्रोत मानक शैक्षणिक कथा के प्रतिनिधित्व के रूप में संदर्भ हेतु शामिल किया गया है &mdash; अलाउद्दीन खिलजी का इसका उपचार प्रशासनिक उपलब्धियों और बाजार सुधारों पर जोर देता है जबकि धार्मिक उत्पीड़न और मंदिर विध्वंस का सीमित कवरेज प्रदान करता है। चंद्र के उपचार की प्राथमिक स्रोतों से सीधे तुलना करने पर मुख्यधारा कथा और ऐतिहासिक अभिलेख के बीच की खाई स्पष्ट होती है।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> मुख्यधारा पाठ्यपुस्तक दृष्टिकोण का प्रतिनिधित्व करता है। मानक कथा क्या शामिल करती है और क्या छोड़ती है, यह समझने के लिए प्राथमिक स्रोतों से तुलना हेतु उपयोगी।
+          </span>
+        </div>
+
+        <!-- Source: Banarsi Prasad Saksena -->
+        <div class="source-entry" id="saksena-shah" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#saksena-shah</span>
+          <h3 class="source-entry__title">Historical Works on the Khalji and Tughlaq Periods</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">लेखक:</span>
+              <span class="source-entry__meta-value">बनारसी प्रसाद सक्सेना</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">शैक्षणिक ऐतिहासिक अध्ययन</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            बनारसी प्रसाद सक्सेना के खिलजी और तुगलक काल के अध्ययन में विद्वतापूर्ण योगदान फारसी प्राथमिक स्रोतों का महत्वपूर्ण पूरक विश्लेषण और अनुवाद प्रदान करते हैं। उनके कार्यों में सल्तनत प्रशासन, शासन और सैन्य अभियानों के विशिष्ट पहलुओं के विस्तृत अध्ययन शामिल हैं जो प्रमुख ऐतिहासिक विवरणों की पुष्टि और विस्तार करते हैं। उनकी विद्वत्ता मूल फारसी पांडुलिपियों के सावधानीपूर्ण पाठ विश्लेषण के लिए विशेष रूप से मूल्यवान है।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> फारसी पांडुलिपियों का विस्तृत पाठ विश्लेषण। प्रमुख प्राथमिक स्रोतों की पूरक पुष्टि और विस्तारित विश्लेषण प्रदान करता है।
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 3: ARCHAEOLOGICAL EVIDENCE ===== -->
+    <section class="section section--dark" id="archaeological-evidence">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">श्रेणी 03</span>
+          <h2 class="section-header__title">पुरातात्विक <span class="text-gold">साक्ष्य</span></h2>
+          <p class="section-header__subtitle">
+            पुरातात्विक सर्वेक्षणों, संरक्षण रिपोर्टों और स्थल प्रलेखन से भौतिक साक्ष्य जो लिखित ऐतिहासिक अभिलेख की पुष्टि करता है। पत्थर झूठ नहीं बोलता।
+          </p>
+        </div>
+
+        <div class="callout callout--info" data-aos="fade-up">
+          <div class="callout__title">पुरातात्विक दावों का सत्यापन</div>
+          <p class="callout__text">
+            पुरातात्विक साक्ष्य प्राथमिक स्रोतों में वर्णित घटनाओं की भौतिक पुष्टि प्रदान करता है। नीचे सूचीबद्ध स्थलों का भारतीय पुरातत्व सर्वेक्षण (ASI) और अन्य पेशेवर पुरातात्विक संस्थाओं द्वारा सर्वेक्षण और प्रलेखन किया गया है। ASI रिपोर्ट सरकारी अभिलेखागारों और ASI के अपने प्रकाशनों के माध्यम से उपलब्ध सार्वजनिक रिकॉर्ड हैं। आगंतुक इनमें से कई स्थलों का प्रत्यक्ष निरीक्षण भी कर सकते हैं, जहां विध्वंस, पुनर्निर्माण और पुन:उपयोग के साक्ष्य आज भी दिखाई देते हैं।
+          </p>
+        </div>
+
+        <!-- Source: ASI Reports -->
+        <div class="source-entry" id="asi-reports" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#asi-reports</span>
+          <h3 class="source-entry__title">भारतीय पुरातत्व सर्वेक्षण (ASI) रिपोर्ट</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">संस्था:</span>
+              <span class="source-entry__meta-value">भारतीय पुरातत्व सर्वेक्षण</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">आधिकारिक सरकारी पुरातात्विक रिपोर्ट</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            1861 में स्थापित भारतीय पुरातत्व सर्वेक्षण ने पूरे भारत में ऐतिहासिक स्थलों का व्यापक प्रलेखन तैयार किया है, जिसमें अलाउद्दीन खिलजी के शासनकाल से सीधे संबंधित कई स्थल शामिल हैं। ASI रिपोर्ट स्मारकों, मंदिरों और किलेबंदियों का वैज्ञानिक पुरातात्विक विश्लेषण, संरक्षण मूल्यांकन और ऐतिहासिक प्रलेखन प्रदान करती हैं जो सल्तनत काल में प्रभावित हुए थे। ये आधिकारिक सरकारी रिकॉर्ड हैं और भारत में पुरातात्विक प्रलेखन के उच्चतम मानक का प्रतिनिधित्व करती हैं।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> आधिकारिक सरकारी पुरातात्विक प्रलेखन। लिखित ऐतिहासिक अभिलेख की पुष्टि करने वाला भौतिक, वैज्ञानिक साक्ष्य प्रदान करता है।
+          </span>
+        </div>
+
+        <!-- Chittor Fort -->
+        <div class="source-entry" id="asi-chittor" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#asi-chittor</span>
+          <h3 class="source-entry__title">चित्तौड़ किला &mdash; संरक्षण एवं पुरातात्विक अभिलेख</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">स्थल:</span>
+              <span class="source-entry__meta-value">चित्तौड़गढ़, राजस्थान</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">यूनेस्को स्थिति:</span>
+              <span class="source-entry__meta-value">विश्व धरोहर स्थल (राजस्थान के पहाड़ी किले)</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">संरक्षण एवं स्थल प्रलेखन</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            चित्तौड़ किला अलाउद्दीन खिलजी की सबसे कुख्यात घेराबंदी (1303 ईसवी) का स्थल है, जहां ऐतिहासिक स्रोत बड़े पैमाने पर नागरिक नरसंहार दर्ज करते हैं। ASI संरक्षण अभिलेख विध्वंस के भौतिक साक्ष्य, किले परिसर के भीतर मंदिरों और महलों को क्षति के प्रतिमान, और बाद के पुनर्निर्माण प्रयासों को प्रलेखित करते हैं। किले का पुरातात्विक रिकॉर्ड प्राथमिक ग्रंथों में वर्णित हमले के पैमाने का मूर्त साक्ष्य प्रदान करता है।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> 1303 ईसवी की घेराबंदी की पुष्टि करने वाला भौतिक साक्ष्य। मंदिरों और संरचनाओं को क्षति के प्रतिमान आज भी दिखाई देते हैं। व्यापक प्रलेखन के साथ यूनेस्को विश्व धरोहर स्थल।
+          </span>
+        </div>
+
+        <!-- Somnath Temple -->
+        <div class="source-entry" id="asi-somnath" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#asi-somnath</span>
+          <h3 class="source-entry__title">सोमनाथ मंदिर &mdash; उत्खनन एवं पुनर्निर्माण प्रलेखन</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">स्थल:</span>
+              <span class="source-entry__meta-value">प्रभास पाटन (सोमनाथ), गुजरात</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">उत्खनन रिपोर्ट एवं पुनर्निर्माण अभिलेख</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            सोमनाथ मंदिर, सबसे पवित्र हिंदू तीर्थस्थलों में से एक, 1299 ईसवी में उलुग खान और नुसरत खान के नेतृत्व में अलाउद्दीन खिलजी के गुजरात अभियान के दौरान लूटा गया। पुरातात्विक उत्खनन और पुनर्निर्माण प्रलेखन मंदिर के विध्वंस और पुनर्निर्माण के इतिहास को दर्शाते हैं &mdash; इसे कई शताब्दियों में कई बार नष्ट और पुनर्निर्मित किया गया, खिलजी-युगीन विध्वंस प्रलेखित प्रकरणों में से एक है। आधुनिक उत्खनन रिपोर्ट विध्वंस की परतों के भौतिक साक्ष्य का विवरण देती हैं।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> 1299 ईसवी के खिलजी-युगीन छापे सहित कई विध्वंस प्रकरणों का पुरातात्विक साक्ष्य। उत्खनन रिपोर्ट ऐतिहासिक विवरणों के अनुरूप भौतिक विध्वंस परतों का प्रलेखन करती हैं।
+          </span>
+        </div>
+
+        <!-- Alai Darwaza and Alai Minar -->
+        <div class="source-entry" id="asi-alai" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#asi-alai</span>
+          <h3 class="source-entry__title">अलाई दरवाजा एवं अलाई मीनार &mdash; स्थापत्य प्रलेखन</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">स्थल:</span>
+              <span class="source-entry__meta-value">कुतुब परिसर, दिल्ली</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">यूनेस्को स्थिति:</span>
+              <span class="source-entry__meta-value">विश्व धरोहर स्थल (कुतुब मीनार एवं उसके स्मारक)</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">स्थापत्य सर्वेक्षण एवं संरक्षण</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            अलाई दरवाजा (1311 ईसवी में पूर्ण) और अधूरी अलाई मीनार अलाउद्दीन खिलजी के सबसे प्रमुख जीवित स्थापत्य आदेश हैं। दोनों कुतुब परिसर में स्थित हैं, जो 27 ध्वस्त हिंदू और जैन मंदिरों के स्थल पर बना था। परिसर के ASI प्रलेखन में निर्माण में दिखाई देने वाली पुन:उपयोग की गई हिंदू मंदिर सामग्री का विश्लेषण शामिल है &mdash; नक्काशीदार स्तंभ, सजावटी तत्व, और मूल मंदिरों के संरचनात्मक घटक जिन्हें इस्लामी संरचनाओं में शामिल किया गया। अलाई मीनार, जो कुतुब मीनार से दोगुनी ऊंची होनी थी, खिलजी की मृत्यु पर अधूरी छोड़ दी गई।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> ध्वस्त हिंदू और जैन मंदिरों की सामग्री से निर्माण का भौतिक साक्ष्य। पुन:उपयोग किए गए मंदिर स्तंभ और नक्काशी आज भी परिसर में दिखाई देते हैं। यूनेस्को विश्व धरोहर प्रलेखन।
+          </span>
+        </div>
+
+        <!-- Quwwat-ul-Islam -->
+        <div class="source-entry" id="asi-quwwat" data-aos="fade-up">
+          <span class="source-entry__id-anchor">#asi-quwwat</span>
+          <h3 class="source-entry__title">कुव्वत-उल-इस्लाम मस्जिद &mdash; पुरातात्विक विश्लेषण</h3>
+          <div class="source-entry__meta">
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">स्थल:</span>
+              <span class="source-entry__meta-value">कुतुब परिसर, दिल्ली</span>
+            </span>
+            <span class="source-entry__meta-item">
+              <span class="source-entry__meta-label">प्रकार:</span>
+              <span class="source-entry__meta-value">पुरातात्विक एवं स्थापत्य विश्लेषण</span>
+            </span>
+          </div>
+          <p class="source-entry__description">
+            कुव्वत-उल-इस्लाम (&ldquo;इस्लाम की शक्ति&rdquo;) मस्जिद, मूल रूप से 1192 ईसवी में कुतुबुद्दीन ऐबक द्वारा निर्मित और अलाउद्दीन खिलजी सहित बाद के शासकों द्वारा विस्तारित, 27 हिंदू और जैन मंदिरों के स्थल पर सीधे बनी है। मस्जिद का पुरातात्विक विश्लेषण ध्वस्त मंदिर सामग्री के व्यापक उपयोग को प्रकट करता है &mdash; जटिल नक्काशी वाले हिंदू मंदिर स्तंभ संरचना को सहारा देते हैं, कई स्तंभों पर हिंदू देवताओं और प्रतीकों को अभी भी देखा जा सकता है जहां उन्हें पूरी तरह से विरूपित नहीं किया गया। खिलजी द्वारा मस्जिद परिसर का विस्तार मंदिर अवशेषों को नए निर्माण में शामिल करने की प्रथा को जारी रखता है।
+          </p>
+          <span class="source-entry__significance">
+            <strong>महत्व:</strong> मंदिर विध्वंस का प्रत्यक्ष भौतिक साक्ष्य। हिंदू मंदिर स्तंभ और नक्काशी अभी भी मस्जिद संरचना में दिखाई देते हैं। स्थल पर शिलालेख ध्वस्त मंदिरों से निर्माण की पुष्टि करते हैं।
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 4: DIGITAL ARCHIVES & VERIFICATION ===== -->
+    <section class="section" id="digital-archives">
+      <div class="container container--narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-header__label">श्रेणी 04</span>
+          <h2 class="section-header__title">डिजिटल अभिलेखागार एवं <span class="text-gold">सत्यापन</span></h2>
+          <p class="section-header__subtitle">
+            ऑनलाइन संसाधन जहां आप डिजिटाइज्ड पांडुलिपियों, शैक्षणिक डेटाबेस और प्राथमिक स्रोत अनुवादों तक पहुंच सकते हैं। हम स्वतंत्र सत्यापन को प्रोत्साहित करते हैं।
+          </p>
+        </div>
+
+        <div class="callout callout--info" data-aos="fade-up">
+          <div class="callout__title">स्वयं सब कुछ सत्यापित करें</div>
+          <p class="callout__text">
+            हम मानते हैं कि ऐतिहासिक सत्य जांच का सामना कर सकता है। निम्नलिखित डिजिटल अभिलेखागार इस वेबसाइट पर उद्धृत कई प्राथमिक स्रोतों और विद्वान कार्यों तक पहुंच प्रदान करते हैं। हम हर पाठक को प्रोत्साहित करते हैं कि वे इन संसाधनों से स्वतंत्र रूप से परामर्श करें, मूल ग्रंथ पढ़ें (कई अंग्रेजी अनुवाद में उपलब्ध हैं), और अपने स्वयं के निष्कर्ष निकालें। यदि आपको इस वेबसाइट पर कोई त्रुटि या गलत प्रस्तुति मिलती है, तो हम इसके बारे में जानना चाहते हैं।
+          </p>
+        </div>
+
+        <!-- Digitized Manuscripts -->
+        <div class="content-body">
+          <h3 data-aos="fade-up">डिजिटाइज्ड पांडुलिपि संग्रह</h3>
+          <p data-aos="fade-up">
+            इस अभिलेखागार में संदर्भित कई प्राथमिक फारसी पांडुलिपियों को डिजिटाइज किया गया है और सीधे ऑनलाइन परामर्श के लिए उपलब्ध हैं।
+          </p>
+
+          <a href="https://www.bl.uk/collection-guides/indian-manuscripts" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">ब्रिटिश लाइब्रेरी &mdash; भारतीय पांडुलिपि संग्रह</div>
+            <div class="archive-link-card__desc">दक्षिण एशियाई पांडुलिपियों के विश्व के सबसे बड़े संग्रहों में से एक, जिसमें दिल्ली सल्तनत काल के फारसी इतिवृत्त शामिल हैं। कई पांडुलिपियां डिजिटाइज की गई हैं और मुफ्त में ऑनलाइन उपलब्ध हैं।</div>
+          </a>
+
+          <a href="https://www.nationalarchives.gov.in/" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">भारतीय राष्ट्रीय अभिलेखागार &mdash; डिजिटल रिपॉजिटरी</div>
+            <div class="archive-link-card__desc">सरकारी अभिलेखों और ऐतिहासिक दस्तावेजों का भारत का केंद्रीय भंडार। इसमें ASI रिपोर्ट, ऐतिहासिक मानचित्र, प्रशासनिक अभिलेख और सल्तनत काल से संबंधित डिजिटाइज्ड पांडुलिपियां शामिल हैं।</div>
+          </a>
+
+          <a href="https://www.persica.org/" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">Persica.org &mdash; फारसी ग्रंथ अनुवाद</div>
+            <div class="archive-link-card__desc">फारसी ग्रंथ अनुवाद और विश्लेषण के लिए शैक्षणिक संसाधन। दिल्ली सल्तनत के इतिवृत्तों सहित प्रमुख फारसी ऐतिहासिक ग्रंथों के अंग्रेजी अनुवादों तक पहुंच प्रदान करता है।</div>
+          </a>
+
+          <h3 data-aos="fade-up">विश्वविद्यालय डिजिटल पुस्तकालय</h3>
+          <p data-aos="fade-up">
+            प्रमुख विश्वविद्यालय डिजिटल पुस्तकालय प्राथमिक स्रोत सामग्री और आधुनिक विद्वान विश्लेषण दोनों तक पहुंच प्रदान करते हैं।
+          </p>
+
+          <a href="https://www.jstor.org/" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">JSTOR &mdash; शैक्षणिक पत्रिका अभिलेखागार</div>
+            <div class="archive-link-card__desc">शैक्षणिक पत्रिकाओं, पुस्तकों और प्राथमिक स्रोतों का डिजिटल अभिलेखागार। इसमें दिल्ली सल्तनत इतिहास पर समीक्षित लेख शामिल हैं, जिनमें ईटन का मंदिर अपवित्रीकरण विश्लेषण और इस वेबसाइट पर उद्धृत अन्य प्रमुख विद्वान कार्य शामिल हैं।</div>
+          </a>
+
+          <a href="https://scholar.google.com/" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">Google Scholar</div>
+            <div class="archive-link-card__desc">शैक्षणिक साहित्य के लिए मुफ्त खोज इंजन। इस वेबसाइट पर उद्धृत किसी भी लेखक या शीर्षक की खोज करके मूल प्रकाशन, उद्धरण गणना और संबंधित विद्वान कार्य खोजें।</div>
+          </a>
+
+          <a href="https://archive.org/" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">Internet Archive &mdash; Open Library</div>
+            <div class="archive-link-card__desc">कई कॉपीराइट-मुक्त ऐतिहासिक ग्रंथ और विद्वान कार्यों के पुराने संस्करण Internet Archive की Open Library के माध्यम से मुफ्त उपलब्ध हैं, जिसमें फारसी इतिवृत्तों के प्रारंभिक अंग्रेजी अनुवाद शामिल हैं।</div>
+          </a>
+
+          <h3 data-aos="fade-up">पुरातात्विक एवं विरासत डेटाबेस</h3>
+          <p data-aos="fade-up">
+            पुरातात्विक रिपोर्ट, विरासत स्थल प्रलेखन और संरक्षण अभिलेखों के लिए ऑनलाइन डेटाबेस।
+          </p>
+
+          <a href="https://asi.nic.in/" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">भारतीय पुरातत्व सर्वेक्षण &mdash; आधिकारिक वेबसाइट</div>
+            <div class="archive-link-card__desc">ASI की आधिकारिक वेबसाइट जिसमें संरक्षित स्मारकों, पुरातात्विक रिपोर्टों, संरक्षण गतिविधियों और पूरे भारत में विरासत स्थल प्रलेखन की जानकारी है।</div>
+          </a>
+
+          <a href="https://whc.unesco.org/" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">यूनेस्को विश्व धरोहर केंद्र</div>
+            <div class="archive-link-card__desc">कुतुब परिसर (दिल्ली) और राजस्थान के पहाड़ी किलों (चित्तौड़ किला सहित) सहित विश्व धरोहर स्थलों का प्रलेखन, विस्तृत ऐतिहासिक विवरण और संरक्षण रिपोर्ट के साथ।</div>
+          </a>
+
+          <a href="https://indianculture.gov.in/" target="_blank" rel="noopener" class="archive-link-card" data-aos="fade-up">
+            <div class="archive-link-card__name">इंडियन कल्चर पोर्टल &mdash; संस्कृति मंत्रालय</div>
+            <div class="archive-link-card__desc">भारतीय सांस्कृतिक विरासत का भारत सरकार का डिजिटल भंडार, जिसमें पूरे भारत की संस्थाओं से डिजिटाइज्ड पांडुलिपियां, ऐतिहासिक तस्वीरें और विरासत स्थल प्रलेखन शामिल हैं।</div>
+          </a>
+        </div>
+
+        <div class="callout callout--info" data-aos="fade-up" style="margin-top: var(--space-2xl);">
+          <div class="callout__title">इस वेबसाइट पर उपयोग किया गया उद्धरण प्रारूप</div>
+          <p class="callout__text">
+            इस अभिलेखागार में, सुपरस्क्रिप्ट उद्धरण संख्याएं (जैसे [1], [2], [3]) सीधे इस पृष्ठ की स्रोत प्रविष्टियों से जुड़ी हैं। किसी भी अध्याय में किसी भी उद्धरण संख्या पर क्लिक करने से आप संबंधित स्रोत पर पहुंच जाएंगे। प्रत्येक स्रोत प्रविष्टि पर id विशेषताएं (# एंकर के रूप में दिखाई देती हैं) किसी भी पृष्ठ से डीप लिंकिंग सक्षम करती हैं। यदि आप इस अभिलेखागार को शोध उद्देश्यों से पढ़ रहे हैं, तो आप इस प्रारूप में URL का उपयोग करके विशिष्ट स्रोतों का उद्धरण कर सकते हैं: <code style="color: var(--color-gold); font-size: var(--text-sm);">alauddinkhilji.com/hi/pages/sources.html#barani-tarikh</code>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared Footer -->
+  <div id="site-footer"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="../../js/components-hi.js"></script>
+  <script src="../../js/nav.js"></script>
+  <script src="../../js/language-toggle.js"></script>
+  <script src="../../js/scroll-animations.js"></script>
+</body>
+</html>
